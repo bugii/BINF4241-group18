@@ -7,9 +7,10 @@ public class Player {
     private Field myField; //will get rid of this, as soon as it's no longer needed
 
     public Player (int playerNumber){
-        System.out.println("Player " + Integer.toString(playerNumber) + "what is your name?: ");
+        System.out.println("Player " + Integer.toString(playerNumber) + " what is your name?: ");
         Scanner scanner = new Scanner(System.in);
         this.name = scanner.nextLine();
+        winner = false;
     }
 
     public Field getField() { //provisorisch
@@ -37,6 +38,6 @@ public class Player {
     }
 
     public void setWinner() {
-        this.winner = winner;
+        this.winner = true;
     }
 }

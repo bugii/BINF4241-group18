@@ -13,7 +13,8 @@ public class Field {
 
     public Field(int fieldNumber, ArrayList<Player> players) {
         this.fieldNumber = fieldNumber;
-        this.players = players;
+        //this.players = players; Will create a direct link, so if you delete something here, will also be deleted in calling array
+        this.players = new ArrayList<Player>(players);
     }
 
     public Field(int fieldNumber) {
