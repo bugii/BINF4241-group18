@@ -9,6 +9,8 @@
         <module name="BINF4241-group18" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="13" />
+    <bytecodeTargetLevel target="13">
+      <module name="BINF4241-group18" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

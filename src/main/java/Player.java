@@ -1,8 +1,24 @@
+import java.util.Scanner;
+
 public class Player {
 
     private String name;
-    private Field field;
     private Boolean winner = false;
+    private Field myField; //will get rid of this, as soon as it's no longer needed
+
+    public Player (int playerNumber){
+        System.out.println("Player " + Integer.toString(playerNumber) + "what is your name?: ");
+        Scanner scanner = new Scanner(System.in);
+        this.name = scanner.nextLine();
+    }
+
+    public Field getField() { //provisorisch
+        return myField;
+    }
+
+    public void setField(Field myField) { //provisorisch
+        this.myField = myField;
+    }
 
     public Player(String name) {
         this.name = name;
@@ -12,15 +28,15 @@ public class Player {
         return name;
     }
 
-    public Field getField() {
-        return field;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setField(Field field) {
-        this.field = field;
+    public Boolean getWinner() {
+        return winner;
     }
 
     public void setWinner() {
-        this.winner = true;
+        this.winner = winner;
     }
 }
