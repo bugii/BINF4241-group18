@@ -48,6 +48,7 @@ public class Field {
         }
         else {
             System.out.println("field busy, send back to start");
+            startField.putOn(player);
             return this.startField;
         }
     }
