@@ -37,8 +37,10 @@ public class Board {
             if((i+1)%7==0){
                 continue;
             }
-            int d = i + (new Random().nextInt(size-i) +1);
-            if (d > size){ d=size; }
+            int d = 6;
+            while((d+1)%7==0 || d>size) {
+                d = i + (new Random().nextInt(size - i) + 1);
+            }
             Field desti = gameboard.get(d-1);
             ((Ladder)gameboard.get(i)).setDestination(desti);
         }
