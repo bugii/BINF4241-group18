@@ -23,11 +23,21 @@ public class Board {
     }
     
     private Ladder MakeLadder(int n, Start f){
+        Field oldField = gameboard.get(n); //get old field
         Ladder l = new Ladder(n, f);
         int d = n + (new Random().nextInt(size-n) +1);
         if (d > size){ d=size; }
         Field desti = gameboard.get(d-1);
         l.setDestination(desti);
+
+        for(int i = 0; i < size; ++i){
+            Field itField = gameboard.get(i);
+            if(itField instanceof Snake){
+                if(((Snake) itField).getDestination() == oldField){
+                    ((Snake) itField).setDestination(l);
+                }
+            }
+        }
         return l;
     }
 
@@ -46,10 +56,13 @@ public class Board {
                 Snake s = MakeSnake(i, firstF);
                 gameboard.set(i-1, s);
             }
-            else if (i % 5 == 0){
+        }
+        for (int i = size-1; i > 1; i--) {
+            if (i % 5 == 0){
                 Ladder l = MakeLadder(i, firstF);
                 gameboard.set(i-1, l);
             }
+
         }
         for (Player p : players) {
             p.setField(firstF);
