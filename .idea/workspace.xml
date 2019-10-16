@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0341ee8-91ac-4ddc-97d9-5c9432056c84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignment 2/src/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment 2/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BINF4241-group18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BINF4241-group18.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 2/src/Bishop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 2/src/FieldNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/src/Board_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/src/Die_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/src/Field_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/src/Game_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Goal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/src/Goal_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Ladder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/src/Ladder_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/src/Player_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/src/Snake_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/src/Start_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BINF4241-group18/META-INF/BINF4241-group18.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Figure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figurines/Bishop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figurines/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figurines/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figurines/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figurines/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figurines/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Tower.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,14 +28,63 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assignment 2/src/Game.java">
+        <entry file="file://$PROJECT_DIR$/Assignment 2/src/Bishop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+              <folding>
+                <element signature="e#486#516#1" />
+                <element signature="e#828#829#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
+                <element signature="e#1109#1110#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment 2/src/FieldNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#FieldNumber#0;class#FieldNumber#0" />
+                <element signature="method#FieldNumber#1;class#FieldNumber#0" />
+                <element signature="method#lineLeft#0;class#FieldNumber#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment 2/src/Color.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment 2/src/Field.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
-                <element signature="e#64#65#0" expanded="true" />
-                <element signature="e#89#90#0" expanded="true" />
+                <element signature="e#58#59#0" expanded="true" />
+                <element signature="e#84#85#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment 2/src/Figure.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -47,6 +94,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -60,6 +109,13 @@
         <option value="$PROJECT_DIR$/Assignment 1/src/Start.java" />
         <option value="$PROJECT_DIR$/.idea/BINF4241-group18.iml" />
         <option value="$PROJECT_DIR$/Assignment 2/src/Game.java" />
+        <option value="$PROJECT_DIR$/Assignment 2/src/Figure.java" />
+        <option value="$PROJECT_DIR$/Assignment 2/src/Figurines/Bishop.java" />
+        <option value="$PROJECT_DIR$/Assignment 2/src/Figurines/Figure.java" />
+        <option value="$PROJECT_DIR$/Assignment 2/src/Field.java" />
+        <option value="$PROJECT_DIR$/Assignment 2/src/Color.java" />
+        <option value="$PROJECT_DIR$/Assignment 2/src/FieldNumber.java" />
+        <option value="$PROJECT_DIR$/Assignment 2/src/Bishop.java" />
       </list>
     </option>
   </component>
@@ -110,7 +166,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571243875955" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571247121784" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -118,6 +174,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -159,15 +220,16 @@
       <workItem from="1570619932141" duration="653000" />
       <workItem from="1571242055647" duration="156000" />
       <workItem from="1571242274824" duration="305000" />
-      <workItem from="1571242674663" duration="995000" />
+      <workItem from="1571242674663" duration="4390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2160000" />
+    <option name="totallyTimeSpent" value="5555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.26228634" />
       <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.25266525" />
@@ -199,6 +261,37 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.26228634" />
+      <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.25266525" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32894737" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -301,6 +394,100 @@
           <folding>
             <element signature="e#64#65#0" expanded="true" />
             <element signature="e#89#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Pawn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Queen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/King.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Tower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Knight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Figure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#58#59#0" expanded="true" />
+            <element signature="e#84#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/FieldNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#FieldNumber#0;class#FieldNumber#0" />
+            <element signature="method#FieldNumber#1;class#FieldNumber#0" />
+            <element signature="method#lineLeft#0;class#FieldNumber#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Bishop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding>
+            <element signature="e#486#516#1" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
           </folding>
         </state>
       </provider>
