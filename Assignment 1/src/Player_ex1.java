@@ -1,27 +1,27 @@
 import java.util.Scanner;
 
-public class Player {
+public class Player_ex1 {
 
     private String name;
     private Boolean winner = false;
-    private Field myField; //will get rid of this, as soon as it's no longer needed
+    private Field_ex1 myField; //will get rid of this, as soon as it's no longer needed
 
-    public Player (int playerNumber){
-        System.out.println("Player " + Integer.toString(playerNumber) + " what is your name?: ");
+    public Player_ex1(int playerNumber){
+        System.out.println("Player_ex1 " + Integer.toString(playerNumber) + " what is your name?: ");
         Scanner scanner = new Scanner(System.in);
         this.name = scanner.nextLine();
         winner = false;
     }
 
-    public Field getField() { //provisorisch
+    public Field_ex1 getField() { //provisorisch
         return myField;
     }
 
-    public void setField(Field myField) { //provisorisch
+    public void setField(Field_ex1 myField) { //provisorisch
         this.myField = myField;
     }
 
-    public Player(String name) {
+    public Player_ex1(String name) {
         this.name = name;
     }
 

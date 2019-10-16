@@ -1,23 +1,23 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Game {
+public class Game_ex1 {
     private int numberOfPlayers;
     private int boardSize;
-    private ArrayList<Player> players;
-    private Board board;
+    private ArrayList<Player_ex1> playerEx1s;
+    private Board_ex1 board;
     private int currentRound = 0;
-    private Die die;
-    private Player winner;
+    private Die_ex1 die;
+    private Player_ex1 winner;
 
     //aks the initial field size and player amount of user
     private void getInitialValues(){
-        //#players
-        System.out.println("How many players will participate?");
+        //#playerEx1s
+        System.out.println("How many playerEx1s will participate?");
         Scanner scanner = new Scanner(System.in);
         numberOfPlayers = scanner.nextInt();
         while(numberOfPlayers < 2 || numberOfPlayers > 4){
-            System.out.println("Invalid number of Players. You need to choose a bumber between 1 and 4. How many players will participate?");
+            System.out.println("Invalid number of Players. You need to choose a bumber between 1 and 4. How many playerEx1s will participate?");
             numberOfPlayers = scanner.nextInt();
         }
 
@@ -25,34 +25,34 @@ public class Game {
         System.out.println("How Big do you want the field to be?");
         boardSize = scanner.nextInt();
         while(boardSize < 2){
-            System.out.println("Field to small, please Enter an Integer > 1");
+            System.out.println("Field_ex1 to small, please Enter an Integer > 1");
             boardSize = scanner.nextInt();
         }
     }
 
     //Initiate all game Objects by using user input
-    public Game( ) {
+    public Game_ex1( ) {
         getInitialValues();
 
         //initializing Players
-        players = new ArrayList<Player>();
+        playerEx1s = new ArrayList<Player_ex1>();
         for( int i = 1; i <= numberOfPlayers; ++i){
-            players.add(new Player(i));
+            playerEx1s.add(new Player_ex1(i));
         }
 
-        //initializing Board
-        board = new Board(players,boardSize);
+        //initializing Board_ex1
+        board = new Board_ex1(playerEx1s,boardSize);
 
         //initialzing die
-        die = new Die();
+        die = new Die_ex1();
 
         //no round yet
         currentRound = 0;
         winner = null;
     }
 
-    public ArrayList<Player> getPlayers() {
-        return players;
+    public ArrayList<Player_ex1> getPlayerEx1s() {
+        return playerEx1s;
     }
 
     private void printGameState() {
@@ -63,27 +63,27 @@ public class Game {
         else if(currentRound == 0){
             message = "Initial State: ";
         } else {
-            message = "Game in Round " + Integer.toString(currentRound) + ": ";
+            message = "Game_ex1 in Round " + Integer.toString(currentRound) + ": ";
         }
         System.out.printf(message);
         board.PrintBoard();
     }
 
-    private void printAfterRoll(Player player,int roll){
-        System.out.printf(player.getName() + " rolls " + Integer.toString(roll) + ": ");
+    private void printAfterRoll(Player_ex1 playerEx1, int roll){
+        System.out.printf(playerEx1.getName() + " rolls " + Integer.toString(roll) + ": ");
         board.PrintBoard();
     }
 
-    private void playTurn(Player player){
+    private void playTurn(Player_ex1 playerEx1){
         int diceRoll = die.roll();
-        board.MoveFig(player,diceRoll);
-        printAfterRoll(player,diceRoll);
+        board.MoveFig(playerEx1,diceRoll);
+        printAfterRoll(playerEx1,diceRoll);
     }
 
     private boolean didWin(){
         for(int i = 0; i < numberOfPlayers; ++i){
-            if(players.get(i).getWinner()){
-                winner = players.get(i);
+            if(playerEx1s.get(i).getWinner()){
+                winner = playerEx1s.get(i);
                 return true;
             }
         }
@@ -94,7 +94,7 @@ public class Game {
         int currentPlayer = 0;
         printGameState();
         while(!didWin()){
-            playTurn(players.get(currentPlayer));
+            playTurn(playerEx1s.get(currentPlayer));
             currentPlayer = (currentPlayer + 1)%numberOfPlayers;
             currentRound += 1;
         }
@@ -103,7 +103,7 @@ public class Game {
     }
 
     public static void main(String[] args) {
-        Game game = new Game();
+        Game_ex1 game = new Game_ex1();
         game.play();
     }
 }
