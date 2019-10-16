@@ -1,6 +1,7 @@
 public class Bishop implements  Figure{
     Field myField;
     Color color;
+    FieldNumber fieldNumber;
 
     @Override
     public void perfromMove(String command, Player player, int turnNumber) {
@@ -15,15 +16,20 @@ public class Bishop implements  Figure{
         int charac = ((int)command.charAt(1))-64;
         int zahl = command.charAt(2);
 
-        //check not on my own field
-        if(zahl == myField.getFieldNumber().getCharacter()){
+        //check not on my own field or not on diagonal
+        if(zahl == myField.getFieldNumber().getCharacter() ){
+            return false;
+        }
+        int col_diff = charac - fieldNumber.getCharAsInt();
+        int row_diff = zahl - fieldNumber.getInt();
+        if( col_diff/row_diff != 1 && col_diff/row_diff != -1){
             return false;
         }
 
         //right
-        if(charac > myField.getFieldNumber().getCharAsInt()){
+        if(col_diff > 0){
 
-            if(zahl > myField.getFieldNumber().getInt()){ //upperRight
+            if(row_diff > 0){ //upperRight
 
             } else { //lowerRight
 
@@ -31,8 +37,7 @@ public class Bishop implements  Figure{
 
         } else { //left
 
-            if(zahl > myField.getFieldNumber().getInt()){ //upperLeft
-
+            if(row_diff > 0){ //upperLeft
             } else { //lowerLeft
 
             }
@@ -60,5 +65,10 @@ public class Bishop implements  Figure{
     @Override
     public String getName() {
         return ((color==Color.BLACK)?"B":"W")+"B";
+    }
+
+    void setMyField(Field field){
+        myField = field;
+        fieldNumber = field.getFieldNumber();
     }
 }

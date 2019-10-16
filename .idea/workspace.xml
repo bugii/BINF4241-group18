@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0341ee8-91ac-4ddc-97d9-5c9432056c84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignment 2/src/Bishop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment 2/src/FieldNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figurines/Bishop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figurines/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figurines/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figurines/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figurines/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figurines/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Tower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Bishop.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,14 +19,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignment 2/src/Bishop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            <state relative-caret-position="419">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#486#516#1" />
-                <element signature="e#828#829#0" expanded="true" />
-                <element signature="e#903#904#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
-                <element signature="e#1109#1110#0" expanded="true" />
+                <element signature="e#784#815#1" />
+                <element signature="e#1202#1203#0" expanded="true" />
+                <element signature="e#1277#1278#0" expanded="true" />
+                <element signature="e#1381#1382#0" expanded="true" />
+                <element signature="e#1483#1484#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,7 +156,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571247121784" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571248048998" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -220,16 +210,15 @@
       <workItem from="1570619932141" duration="653000" />
       <workItem from="1571242055647" duration="156000" />
       <workItem from="1571242274824" duration="305000" />
-      <workItem from="1571242674663" duration="4390000" />
+      <workItem from="1571242674663" duration="4908000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5555000" />
+    <option name="totallyTimeSpent" value="6073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.26228634" />
       <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.25266525" />
@@ -480,14 +469,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignment 2/src/Bishop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="419">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#486#516#1" />
-            <element signature="e#828#829#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#784#815#1" />
+            <element signature="e#1202#1203#0" expanded="true" />
+            <element signature="e#1277#1278#0" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
           </folding>
         </state>
       </provider>
