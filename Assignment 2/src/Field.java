@@ -1,6 +1,14 @@
 public class Field {
 
-    FieldNumber getFieldNumber(){
+    public FieldNumber getFieldNumber(){
+        return null;
+    }
+
+    public Boolean isOccupied(){
+        return false;
+    }
+
+    public Figure byWhom(){
         return null;
     }
 }

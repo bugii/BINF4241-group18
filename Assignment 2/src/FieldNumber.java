@@ -95,4 +95,8 @@ public class FieldNumber {
         }
         return list;
     }
+
+    public Boolean equals(FieldNumber fieldNumber){
+        return number ==fieldNumber.getInt() && character == fieldNumber.getCharAsInt();
+    }
 }
