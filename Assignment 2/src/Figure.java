@@ -3,6 +3,7 @@ public interface Figure {
     public boolean canPerformMove(String command);
     Color getColor();
     Field getField();
+    void setField(Field field);
     FieldNumber getFieldNumber();
     String getName();
 }

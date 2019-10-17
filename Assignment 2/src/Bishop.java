@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Bishop implements  Figure{
-    Field myField;
-    Color color;
-    FieldNumber fieldNumber;
-    Board board;
+    private Field myField;
+    private Color color;
+    private FieldNumber fieldNumber;
+    private Board board;
 
     //array mix: [0]=FigureType, [1] = FigureChar, [2]=FigureInt, [3]=goalChar, [4]=goalint, [5] = eating, [6] = check
     private ArrayList<Character> distill(String stringOriginal){
@@ -77,7 +77,15 @@ public class Bishop implements  Figure{
 
     @Override
     public void perfromMove(String command, Player player, int turnNumber) {
+        ArrayList<Character> comands = this.distill(command);
+        Field goalField = board.getField(new FieldNumber(comands.get(3),((int)comands.get(4))-80));
+        if(comands.get(5) == 'x'){
+            Figure eatenFigurine = goalField.byWhom();
+            goalField.removeFigruine();
+            player.addToEaten(eatenFigurine);
+        }
 
+        goalField.placeFigurine(this);
     }
 
     @Override
@@ -201,6 +209,11 @@ public class Bishop implements  Figure{
     }
 
     @Override
+    public void setField(Field field) {
+        this.myField = field;
+    }
+
+    @Override
     public FieldNumber getFieldNumber() {
         return myField.getFieldNumber();
     }
@@ -208,10 +221,5 @@ public class Bishop implements  Figure{
     @Override
     public String getName() {
         return ((color==Color.BLACK)?"B":"W")+"B";
-    }
-
-    void setMyField(Field field){
-        myField = field;
-        fieldNumber = field.getFieldNumber();
     }
 }
