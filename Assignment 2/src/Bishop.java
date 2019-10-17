@@ -2,6 +2,7 @@ public class Bishop implements  Figure{
     Field myField;
     Color color;
     FieldNumber fieldNumber;
+    Board board;
 
     @Override
     public void perfromMove(String command, Player player, int turnNumber) {
@@ -30,6 +31,10 @@ public class Bishop implements  Figure{
         if(col_diff > 0){
 
             if(row_diff > 0){ //upperRight
+
+                for(FieldNumber fn :fieldNumber.upRight()){
+                    Field currentField = board.get
+                }
 
             } else { //lowerRight
 
