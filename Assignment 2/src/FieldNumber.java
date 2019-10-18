@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class FieldNumber {
     private int number;
@@ -98,5 +97,9 @@ public class FieldNumber {
 
     public Boolean equals(FieldNumber fieldNumber){
         return number ==fieldNumber.getInt() && character == fieldNumber.getCharAsInt();
+    }
+
+    public void printFieldNumber() {
+        System.out.printf(String.valueOf(this.getCharacter()), this.number);
     }
 }

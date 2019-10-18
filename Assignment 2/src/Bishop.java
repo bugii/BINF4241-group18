@@ -81,7 +81,7 @@ public class Bishop implements  Figure{
         Field goalField = board.getField(new FieldNumber(comands.get(3),((int)comands.get(4))-80));
         if(comands.get(5) == 'x'){
             Figure eatenFigurine = goalField.byWhom();
-            goalField.removeFigruine();
+            goalField.removeFigurine();
             player.addToEaten(eatenFigurine);
         }
 
