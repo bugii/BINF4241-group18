@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0341ee8-91ac-4ddc-97d9-5c9432056c84" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Queen.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignment 2/src/Bishop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="268">
+              <caret line="186" column="30" lean-forward="true" selection-start-line="186" selection-start-column="30" selection-end-line="186" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#distill#0;class#Bishop#0" />
@@ -39,6 +33,21 @@
                 <element signature="e#7187#7188#0" expanded="true" />
                 <element signature="e#7232#7233#0" expanded="true" />
                 <element signature="e#7289#7290#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignment 2/src/Queen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="113" column="95" selection-start-line="113" selection-start-column="95" selection-end-line="113" selection-end-column="95" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#distill#0;class#Queen#0" />
+                <element signature="method#perfromMove#0;class#Queen#0" />
+                <element signature="e#3938#3975#1" />
               </folding>
             </state>
           </provider>
@@ -132,6 +141,7 @@
         <option value="$PROJECT_DIR$/Assignment 2/src/Figure.java" />
         <option value="$PROJECT_DIR$/Assignment 2/src/Knight.java" />
         <option value="$PROJECT_DIR$/Assignment 2/src/Bishop.java" />
+        <option value="$PROJECT_DIR$/Assignment 2/src/Queen.java" />
       </list>
     </option>
   </component>
@@ -233,16 +243,15 @@
       <workItem from="1571242274824" duration="305000" />
       <workItem from="1571242674663" duration="4908000" />
       <workItem from="1571289694176" duration="11181000" />
-      <workItem from="1571315999947" duration="2871000" />
+      <workItem from="1571315999947" duration="3306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20125000" />
+    <option name="totallyTimeSpent" value="20560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.26869658" />
       <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.25266525" />
@@ -411,13 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Queen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment 2/src/King.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -506,8 +508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignment 2/src/Bishop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="268">
+          <caret line="186" column="30" lean-forward="true" selection-start-line="186" selection-start-column="30" selection-end-line="186" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#distill#0;class#Bishop#0" />
@@ -520,6 +522,19 @@
             <element signature="e#7187#7188#0" expanded="true" />
             <element signature="e#7232#7233#0" expanded="true" />
             <element signature="e#7289#7290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Queen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="113" column="95" selection-start-line="113" selection-start-column="95" selection-end-line="113" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#distill#0;class#Queen#0" />
+            <element signature="method#perfromMove#0;class#Queen#0" />
+            <element signature="e#3938#3975#1" />
           </folding>
         </state>
       </provider>
