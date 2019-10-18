@@ -81,7 +81,7 @@ public class Queen implements Figure{
         Field goalField = board.getField(new FieldNumber(comands.get(3),((int)comands.get(4))-80));
         if(comands.get(5) == 'x'){
             Figure eatenFigurine = goalField.byWhom();
-            goalField.removeFigruine();
+            goalField.removeFigurine();
             player.addToEaten(eatenFigurine);
         }
 
@@ -111,76 +111,56 @@ public class Queen implements Figure{
         }
         int col_diff = charac - fieldNumber.getCharAsInt();
         int row_diff = zahl - fieldNumber.getInt();
-        if( col_diff/row_diff != 1 && col_diff/row_diff != -1 && col_diff != 0 && row_diff != 0){
+
+        //legal field
+        if( col_diff == 0 && row_diff == 0) {
+            return false;
+        }
+        if( col_diff != 0 && row_diff != 0 &&(col_diff/row_diff != 1 && col_diff/row_diff != -1) ){
             return false;
         }
 
         //some variables
         Field goalField = null;
+        Iterable<FieldNumber> direction;
 
-        //right
-        if(col_diff > 0){
-
-            if(row_diff > 0){ //upperRight
-
-                for(FieldNumber fn :fieldNumber.upRight()){
-                    Field currentField = board.getField(fn);
-                    if(fn.equals(new FieldNumber(charac,zahl))){
-                        goalField = currentField;
-                        break;
-                    }
-                    if(currentField.isOccupied()){
-                        return false;
-                    }
-                }
-
-            } else { //lowerRight
-
-                for(FieldNumber fn :fieldNumber.downRight()){
-                    Field currentField = board.getField(fn);
-                    if(fn.equals(new FieldNumber(charac,zahl))){
-                        goalField = currentField;
-                        break;
-                    }
-                    if(currentField.isOccupied()){
-                        return false;
-                    }
-                }
-
+        //path free
+        if(col_diff == 0){
+            if(row_diff > 0){
+                direction = fieldNumber.lineUp();
+            } else {
+                direction = fieldNumber.lineDown();
             }
-
         }
-        else { //left
-
-            if(row_diff > 0){ //upperLeft
-
-                for(FieldNumber fn :fieldNumber.upLeft()){
-                    Field currentField = board.getField(fn);
-                    if(fn.equals(new FieldNumber(charac,zahl))){
-                        goalField = currentField;
-                        break;
-                    }
-                    if(currentField.isOccupied()){
-                        return false;
-                    }
-                }
-
-            } else { //lowerLeft
-
-                for(FieldNumber fn :fieldNumber.downLeft()){
-                    Field currentField = board.getField(fn);
-                    if(fn.equals(new FieldNumber(charac,zahl))){
-                        goalField = currentField;
-                        break;
-                    }
-                    if(currentField.isOccupied()){
-                        return false;
-                    }
-                }
-
-
+        else if (row_diff == 0){
+            if(col_diff > 0){
+                direction = fieldNumber.lineLeft();
+            } else {
+                direction = fieldNumber.lineRight();
             }
-
+        }
+        else if(col_diff/row_diff == 1){
+            if(col_diff > 0){
+                direction = fieldNumber.upRight();
+            } else {
+                direction = fieldNumber.downLeft();
+            }
+        }
+        else{
+            if(col_diff > 0){
+                direction = fieldNumber.upLeft();
+            } else {
+                direction = fieldNumber.downRight();
+            }
+        }
+        for(FieldNumber i:direction){
+            if(direction.equals(new FieldNumber(charac,zahl))){
+                goalField = board.getField(i);
+                break;
+            }
+            if(board.getField(i).isOccupied()){
+                return false;
+            }
         }
 
         //security check, sould not be needed
@@ -211,6 +191,7 @@ public class Queen implements Figure{
     @Override
     public void setField(Field field) {
         this.myField = field;
+        fieldNumber = field.getFieldNumber();
     }
 
     @Override
