@@ -1,3 +1,12 @@
 public enum Color {
-    BLACK, WHITE
+    BLACK, WHITE;
+
+    public int moveDirection(){
+        if(this == BLACK){
+            return -1;
+        }
+        else{
+            return 1;
+        }
+    }
 }

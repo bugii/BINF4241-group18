@@ -7,6 +7,13 @@ public class Bishop implements  Figure{
     private FieldNumber fieldNumber;
     private Board board;
 
+    public Bishop (Field field, Color color, Board board){
+        this.myField = field;
+        this.color = color;
+        this.fieldNumber = field.getFieldNumber();
+        this.board = board;
+    }
+
     //array mix: [0]=FigureType, [1] = FigureChar, [2]=FigureInt, [3]=goalChar, [4]=goalint, [5] = eating, [6] = check
     private ArrayList<Character> distill(String stringOriginal){
         String string = new String(stringOriginal);
@@ -211,6 +218,7 @@ public class Bishop implements  Figure{
     @Override
     public void setField(Field field) {
         this.myField = field;
+        fieldNumber = field.getFieldNumber();
     }
 
     @Override

@@ -7,6 +7,13 @@ public class Queen implements Figure{
     private FieldNumber fieldNumber;
     private Board board;
 
+    public Queen (Field field, Color color, Board board){
+        this.myField = field;
+        this.color = color;
+        this.fieldNumber = field.getFieldNumber();
+        this.board = board;
+    }
+
     //array mix: [0]=FigureType, [1] = FigureChar, [2]=FigureInt, [3]=goalChar, [4]=goalint, [5] = eating, [6] = check
     private ArrayList<Character> distill(String stringOriginal){
         String string = new String(stringOriginal);
@@ -154,7 +161,7 @@ public class Queen implements Figure{
             }
         }
         for(FieldNumber i:direction){
-            if(direction.equals(new FieldNumber(charac,zahl))){
+            if(i.equals(new FieldNumber(charac,zahl))){
                 goalField = board.getField(i);
                 break;
             }
