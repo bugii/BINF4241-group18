@@ -71,7 +71,7 @@ public class Game {
         Board board = new Board();
 
         //make figurines
-        Figure tower = new Tower(board.getField(2,2),Color.BLACK,board);
+        Figure tower = new Tower(board.getField(2,3),Color.BLACK,board);
         Figure queen = new Queen(board.getField(5,2),Color.WHITE,board);
         Figure bishop = new Bishop(board.getField(5,4),Color.WHITE,board);
         Figure knight = new Knight(board.getField(3,4),Color.WHITE,board);
@@ -79,6 +79,8 @@ public class Game {
         Figure pawn = new Pawn(board.getField(3,2),Color.WHITE,board);
 
         dimisBoardPrint(board);
-        System.out.println(pawn.canPerformMove("" + "PC3"));
+        System.out.println(pawn.canPerformMove("" + "PCxB3"));
+        pawn.perfromMove("PCxB3",new Player(),3);
+        dimisBoardPrint(board);
     }
 }

@@ -110,7 +110,7 @@ public class Knight implements Figure {
             return false;
         }
         //check if correct figurine placement
-        if( !( (command.get(1) == '\u0000' || command.get(1) == fieldNumber.getCharacter()) && (command.get(2) == '\u0000' || ((int)command.get(2))-80 == fieldNumber.getInt()) ) ){
+        if( !( (command.get(1) == '\u0000' || command.get(1) == fieldNumber.getCharacter()) && (command.get(2) == '\u0000' || ((int)command.get(2))-48 == fieldNumber.getInt()) ) ){
             return false;
         }
 
