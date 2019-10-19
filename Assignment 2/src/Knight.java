@@ -7,11 +7,15 @@ public class Knight implements Figure {
     private FieldNumber fieldNumber;
     private Board board;
 
+    public Knight() {
+    }
+
     public Knight (Field field, Color color, Board board){
         this.myField = field;
         this.color = color;
         this.fieldNumber = field.getFieldNumber();
         this.board = board;
+        field.placeFigurine(this);
     }
 
     //array mix: [0]=FigureType, [1] = FigureChar, [2]=FigureInt, [3]=goalChar, [4]=goalint, [5] = eating, [6] = check
@@ -85,13 +89,14 @@ public class Knight implements Figure {
     @Override
     public void perfromMove(String command, Player player, int turnNumber) {
         ArrayList<Character> comands = this.distill(command);
-        Field goalField = board.getField(new FieldNumber(comands.get(3),((int)comands.get(4))-80));
+        Field goalField = board.getField(new FieldNumber(comands.get(3),((int)comands.get(4))-48));
         if(comands.get(5) == 'x'){
             Figure eatenFigurine = goalField.byWhom();
             goalField.removeFigurine();
             player.addToEaten(eatenFigurine);
         }
 
+        myField.removeFigurine();
         goalField.placeFigurine(this);
     }
 
@@ -110,7 +115,7 @@ public class Knight implements Figure {
         }
 
         int charac = ((int)command.get(3))-64;
-        int zahl = command.get(4);
+        int zahl = ((int)command.get(4))-48;
 
         //check not on my own field
         if(zahl == myField.getFieldNumber().getCharacter() ){

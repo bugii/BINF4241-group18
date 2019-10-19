@@ -8,12 +8,16 @@ public class King implements Figure{
     private Board board;
     private boolean moved;
 
+    public King() {
+    }
+
     public King (Field field, Color color, Board board){
         this.myField = field;
         this.color = color;
         this.fieldNumber = field.getFieldNumber();
         this.board = board;
         moved = false;
+        field.placeFigurine(this);
     }
 
     //array mix: [0]=FigureType, [1] = FigureChar, [2]=FigureInt, [3]=goalChar, [4]=goalint, [5] = eating, [6] = check
@@ -87,13 +91,14 @@ public class King implements Figure{
     @Override
     public void perfromMove(String command, Player player, int turnNumber) {
         ArrayList<Character> comands = this.distill(command);
-        Field goalField = board.getField(new FieldNumber(comands.get(3),((int)comands.get(4))-80));
+        Field goalField = board.getField(new FieldNumber(comands.get(3),((int)comands.get(4))-48));
         if(comands.get(5) == 'x'){
             Figure eatenFigurine = goalField.byWhom();
             goalField.removeFigurine();
             player.addToEaten(eatenFigurine);
         }
 
+        myField.removeFigurine();
         goalField.placeFigurine(this);
 
         moved = true;
@@ -114,7 +119,7 @@ public class King implements Figure{
         }
 
         int charac = ((int)command.get(3))-64;
-        int zahl = command.get(4);
+        int zahl = ((int)command.get(4))-48;
 
         //check not on my own field or not on diagonal
         if(zahl == myField.getFieldNumber().getCharacter() && zahl == fieldNumber.getInt()){
@@ -140,7 +145,7 @@ public class King implements Figure{
             }
         }
         else if (row_diff == 0){
-            if(col_diff > 0){
+            if(col_diff < 0){
                 direction = fieldNumber.lineLeft();
             } else {
                 direction = fieldNumber.lineRight();
@@ -154,20 +159,19 @@ public class King implements Figure{
             }
         }
         else{
-            if(col_diff > 0){
+            if(col_diff < 0){
                 direction = fieldNumber.upLeft();
             } else {
                 direction = fieldNumber.downRight();
             }
         }
+
         for(FieldNumber i:direction){
             if(i.equals(new FieldNumber(charac,zahl))){
                 goalField = board.getField(i);
                 break;
             }
-            if(board.getField(i).isOccupied()){
-                return false;
-            }
+            return false;
         }
 
         //security check, sould not be needed
@@ -208,7 +212,7 @@ public class King implements Figure{
 
     @Override
     public String getName() {
-        return ((color==Color.BLACK)?"B":"W")+"T";
+        return ((color==Color.BLACK)?"B":"W")+"K";
     }
 
 

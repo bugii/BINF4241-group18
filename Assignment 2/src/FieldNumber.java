@@ -65,7 +65,7 @@ public class FieldNumber {
 
     public Iterable<FieldNumber> upRight() {
         ArrayList<FieldNumber> list = new ArrayList<FieldNumber>();
-        for (int i = 1; (number+1)<9&&(character+1)<9; i++) {
+        for (int i = 1; (number+i)<9&&(character+i)<9; i++) {
             list.add(new FieldNumber(character+i,number+i));
         }
         return list;
@@ -73,7 +73,7 @@ public class FieldNumber {
 
     public Iterable<FieldNumber> upLeft() {
         ArrayList<FieldNumber> list = new ArrayList<FieldNumber>();
-        for (int i = 1; (number+1)<9 && (character-1)>0; i++) {
+        for (int i = 1; (number+i)<9 && (character-i)>0; i++) {
             list.add(new FieldNumber(character-i,number+i));
         }
         return list;
@@ -81,7 +81,7 @@ public class FieldNumber {
 
     public Iterable<FieldNumber> downRight() {
         ArrayList<FieldNumber> list = new ArrayList<FieldNumber>();
-        for (int i = 1; (number-1)>0 && (character+1)<9; i++) {
+        for (int i = 1; (number-i)>0 && (character+i)<9; i++) {
             list.add(new FieldNumber(character+i,number-i));
         }
         return list;
@@ -89,7 +89,7 @@ public class FieldNumber {
 
     public Iterable<FieldNumber> downLeft() {
         ArrayList<FieldNumber> list = new ArrayList<FieldNumber>();
-        for (int i = 1; (number-1)>0 && (character-1)>0; i++) {
+        for (int i = 1; (number-i)>0 && (character-i)>0; i++) {
             list.add(new FieldNumber(character-i,number-i));
         }
         return list;
