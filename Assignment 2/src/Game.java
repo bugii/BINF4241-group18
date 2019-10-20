@@ -70,21 +70,21 @@ public class Game {
     private void play(){
         int currentPlayer = 0;
         currentRound = 1;
-        dimisBoardPrint(board);
+        board.printBoard();
         boolean nextTurn = false;
         while(!stop){
             while (!nextTurn){
                 nextTurn = playTurn(players.get(currentPlayer));
             }
             nextTurn = false;
-            dimisBoardPrint(board);
+            board.printBoard();
             currentPlayer = (currentPlayer + 1)%2;
             currentRound +=1;
         }
 
     }
 
-    private static void dimisBoardPrint(Board board){
+/*    private static void dimisBoardPrint(Board board){
         FieldNumber beginning = new FieldNumber(1,8);
         Iterable<FieldNumber> down = beginning.lineDown();
 
@@ -132,7 +132,7 @@ public class Game {
             System.out.print(" " + (char)(i+64) + "  ");
         }
         System.out.print("\n");
-    }
+    }*/
 
     public static void main(String[] args) {
         Game game = new Game();
