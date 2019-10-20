@@ -1,18 +1,87 @@
-import java.util.Iterator;
+import java.util.Locale;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Game {
+    private ArrayList<Player> players = new ArrayList<>();
+    private Board board;
+    private int currentRound = 0;
+    private boolean stop = false;
 
-    public static void main(String[] args) {
-        Board board = new Board();
-        board.printBoard();
+    private Game(){
+        board = new Board();
+        players.add(new Player(Color.WHITE, makeSet(Color.WHITE)));
+        players.add(new Player(Color.BLACK, makeSet(Color.BLACK)));
+    }
 
-        Figure Knight = new Knight();
-        Figure Bishop = new Bishop();
 
-        board.placeFigurine(Knight, 1, 1);
-        board.placeFigurine(Bishop, 3, 8);
+    private ArrayList<Figure> makeSet(Color colour){
+        ArrayList<Figure> set = new ArrayList<>();
+        int row1, row2;
+        if (colour == Color.WHITE){
+            row1 = 1; row2 = 2; }
+        else{ row1 = 8; row2 = 7; }
+        set.add(new Tower(board.getField(1, row1), colour, board));
+        set.add(new Knight(board.getField(2, row1), colour, board));
+        set.add(new Bishop(board.getField(3, row1), colour, board));
+        set.add(new Queen(board.getField(4, row1), colour, board));
+        set.add(new King(board.getField(5, row1), colour, board));
+        set.add(new Bishop(board.getField(6, row1), colour, board));
+        set.add(new Knight(board.getField(7, row1), colour, board));
+        set.add(new Tower(board.getField(8, row1), colour, board));
+        for(int i = 1; i <= 8; i++){
+            set.add(new Pawn(board.getField(i, row2), colour, board));
+        }
+        return set;
+    }
 
-        dimitrisTests();
+    private void help(){
+        System.out.println("Here is a guide to input:");
+        System.out.println("*cough cough* I'll add this later...");
+    }
+
+    private boolean playTurn(Player player){
+        System.out.println(player.name + ", what would you like to do?");
+        Scanner scanner = new Scanner(System.in);
+        String turn = scanner.nextLine();
+        if(turn.isEmpty()){
+            System.out.println("Sorry, but we require an input.");
+            return false;
+        }
+        else if(turn.toLowerCase().equals("help")){
+            help();
+            return false;
+        }
+        else if(turn.toLowerCase().equals("stop")){
+            stop = true;
+            System.out.println("The game will be stopped.");
+            return true;
+        }
+        else{
+            String outcome = player.preformMove(turn, currentRound);
+            if(outcome.equals("ok")){ return true; }
+            else {
+                System.out.println(outcome);
+                return false;
+            }
+        }
+    }
+
+    private void play(){
+        int currentPlayer = 0;
+        currentRound = 1;
+        dimisBoardPrint(board);
+        boolean nextTurn = false;
+        while(!stop){
+            while (!nextTurn){
+                nextTurn = playTurn(players.get(currentPlayer));
+            }
+            nextTurn = false;
+            dimisBoardPrint(board);
+            currentPlayer = (currentPlayer + 1)%2;
+            currentRound +=1;
+        }
+
     }
 
     private static void dimisBoardPrint(Board board){
@@ -65,22 +134,8 @@ public class Game {
         System.out.print("\n");
     }
 
-    private static void dimitrisTests(){
-        System.out.println("Hier starte Dimitris tests\n\n\n");
-
-        Board board = new Board();
-
-        //make figurines
-        Figure tower = new Tower(board.getField(2,3),Color.BLACK,board);
-        Figure queen = new Queen(board.getField(5,2),Color.WHITE,board);
-        Figure bishop = new Bishop(board.getField(5,4),Color.WHITE,board);
-        Figure knight = new Knight(board.getField(3,4),Color.WHITE,board);
-        Figure king = new King(board.getField(2,4),Color.BLACK,board);
-        Figure pawn = new Pawn(board.getField(3,2),Color.WHITE,board);
-
-        dimisBoardPrint(board);
-        System.out.println(pawn.canPerformMove("" + "PCxB3"));
-        pawn.perfromMove("PCxB3",new Player(),3);
-        dimisBoardPrint(board);
+    public static void main(String[] args) {
+        Game game = new Game();
+        game.play();
     }
 }
