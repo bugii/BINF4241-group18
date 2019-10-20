@@ -84,56 +84,6 @@ public class Game {
 
     }
 
-/*    private static void dimisBoardPrint(Board board){
-        FieldNumber beginning = new FieldNumber(1,8);
-        Iterable<FieldNumber> down = beginning.lineDown();
-
-        //first line
-        System.out.print("[");
-        if(board.getField(beginning).isOccupied()){
-            System.out.print(board.getField(beginning).byWhom().getName());
-        } else {
-            System.out.print("  ");
-        }
-        System.out.print("]");
-        for(FieldNumber i:beginning.lineRight()){
-            System.out.print("[");
-            if(board.getField(i).isOccupied()){
-                System.out.print(board.getField(i).byWhom().getName());
-            } else {
-                System.out.print("  ");
-            }
-            System.out.print("]");
-        }
-        System.out.print("\n");
-
-        //rest
-        for(FieldNumber j:down){
-            System.out.print("[");
-            if(board.getField(j).isOccupied()){
-                System.out.print(board.getField(j).byWhom().getName());
-            } else {
-                System.out.print("  ");
-            }
-            System.out.print("]");
-            for(FieldNumber i:j.lineRight()){
-                System.out.print("[");
-                if(board.getField(i).isOccupied()){
-                    System.out.print(board.getField(i).byWhom().getName());
-                } else {
-                    System.out.print("  ");
-                }
-                System.out.print("]");
-            }
-            System.out.print("\n");
-
-        }
-        for(int i = 1; i < 9; ++i){
-            System.out.print(" " + (char)(i+64) + "  ");
-        }
-        System.out.print("\n");
-    }*/
-
     public static void main(String[] args) {
         Game game = new Game();
         game.play();
