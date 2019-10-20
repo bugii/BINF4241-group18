@@ -38,6 +38,10 @@ public class Player {
     public Color getColour(){
         return colour;
     }
+    
+    public Figure getKing(){
+        return figures.get(4);
+    }
 
     public String preformMove(String move, int turnNum){
         ArrayList<Figure> movables = new ArrayList<>();
