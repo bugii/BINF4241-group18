@@ -35,11 +35,9 @@ public class Pawn implements Figure{
             case 'N': comands.set(7,tr); break;
             case 'T': comands.set(7,tr); break;
         }
-        System.out.print(string + "/// ");
         if( ! comands.get(7).equals('\u0000')){
             string = string.substring(0,string.length()-1);
         }
-        System.out.println(string);
 
         if(string.length() == 7){
             comands.set(6,string.charAt(6));
@@ -181,8 +179,6 @@ public class Pawn implements Figure{
         Field goalField = null;
         Iterable<FieldNumber> direction;
 
-        System.out.println(fieldNumber.getCharacter() + "kommt bis gleich nach ini");
-
         //right
         if(color.moveDirection() == row_diff && col_diff == 0 && command.get(5) != 'x'){ //just one step forward
             goalField = board.getField(new FieldNumber(fieldNumber.getCharacter(),fieldNumber.getInt()+color.moveDirection()));
@@ -203,8 +199,6 @@ public class Pawn implements Figure{
         if(goalField == null){
             return false;
         }
-
-        System.out.println("kommt bis vor check");
         //check if eating/not Eating match
         if(command.get(5) == 'x' && !goalField.isOccupied()){ //check for enpassant
             FieldNumber eatenFieldNumber = new FieldNumber(goalField.getFieldNumber().getCharacter(),goalField.getFieldNumber().getInt()-color.moveDirection());
@@ -221,7 +215,6 @@ public class Pawn implements Figure{
             return false;
         }
 
-        System.out.println("kommt bis vor transf mit " + command.get(7));
         //chech for transformation
         if(command.get(7) != '\u0000'){
             if(zahl != 8 && zahl != 1){
