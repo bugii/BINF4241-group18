@@ -28,16 +28,18 @@ public class Pawn implements Figure{
         if(string.length() > 0){ comands.set(0,string.charAt(0) );}
 
         //cheking for the evolution of the pawn into a butterfly
-        char tr = stringOriginal.charAt(stringOriginal.length()-1);
+        char tr = string.charAt(stringOriginal.length()-1);
         switch (tr){
-            case 'Q': comands.set(7,tr);
-            case 'B': comands.set(7,tr);
-            case 'N': comands.set(7,tr);
-            case 'T': comands.set(7,tr);
+            case 'Q': comands.set(7,tr); break;
+            case 'B': comands.set(7,tr); break;
+            case 'N': comands.set(7,tr); break;
+            case 'T': comands.set(7,tr); break;
         }
-        if( comands.get(7) != '\u0000'){
-            string = string.substring(1,string.length()-1);
+        System.out.print(string + "/// ");
+        if( ! comands.get(7).equals('\u0000')){
+            string = string.substring(0,string.length()-1);
         }
+        System.out.println(string);
 
         if(string.length() == 7){
             comands.set(6,string.charAt(6));
@@ -66,7 +68,7 @@ public class Pawn implements Figure{
                 comands.set(6,string.charAt(4));
                 string = string.substring(0,4);
             }
-            else if(Character.isAlphabetic(string.charAt(1) )){
+            else if(Character.isLetter(string.charAt(1) )){
                 comands.set(1,string.charAt(1));
                 string = string.charAt(0) + string.substring(2,5);
             }
@@ -84,7 +86,7 @@ public class Pawn implements Figure{
                 comands.set(6,string.charAt(3));
                 string = string.substring(0,3);
             }
-            else if(Character.isAlphabetic(string.charAt(1) )){
+            else if(Character.isLetter(string.charAt(1) )){
                 comands.set(1,string.charAt(1));
                 string = string.charAt(0) + string.substring(2,4);
             }
@@ -132,14 +134,15 @@ public class Pawn implements Figure{
         if(comands.get(7) != '\u0000'){
             Figure newIdentity = this;  //this is not just a phase-mom!
             System.out.println("Whats this? \"Pawn\" is evolving");
-            Field myOldField = myField;
             myField.removeFigurine();
-            myField = null;
+            Field myOldField = myField;
+            myField = myField = null;
+            fieldNumber = null;
             switch (comands.get(7)){
-                case 'Q': newIdentity= new Queen(myOldField,this.color,board);
-                case 'N': newIdentity= new Knight(myOldField,this.color,board);
-                case 'B': newIdentity= new Bishop(myOldField,this.color,board);
-                case 'T': newIdentity= new Tower(myOldField,this.color,board);
+                case 'Q': newIdentity= new Queen(myOldField,this.color,board); break;
+                case 'N': newIdentity= new Knight(myOldField,this.color,board); break;
+                case 'B': newIdentity= new Bishop(myOldField,this.color,board); break;
+                case 'T': newIdentity= new Tower(myOldField,this.color,board); break;
             }
             System.out.println("Pawn evolved into "+ newIdentity.getClass().toString());
             player.transformPawn(this,newIdentity); //this is the end for our old pawn. May a flight of angels take you to your grave
@@ -178,6 +181,8 @@ public class Pawn implements Figure{
         Field goalField = null;
         Iterable<FieldNumber> direction;
 
+        System.out.println(fieldNumber.getCharacter() + "kommt bis gleich nach ini");
+
         //right
         if(color.moveDirection() == row_diff && col_diff == 0 && command.get(5) != 'x'){ //just one step forward
             goalField = board.getField(new FieldNumber(fieldNumber.getCharacter(),fieldNumber.getInt()+color.moveDirection()));
@@ -199,6 +204,7 @@ public class Pawn implements Figure{
             return false;
         }
 
+        System.out.println("kommt bis vor check");
         //check if eating/not Eating match
         if(command.get(5) == 'x' && !goalField.isOccupied()){ //check for enpassant
             FieldNumber eatenFieldNumber = new FieldNumber(goalField.getFieldNumber().getCharacter(),goalField.getFieldNumber().getInt()-color.moveDirection());
@@ -215,6 +221,7 @@ public class Pawn implements Figure{
             return false;
         }
 
+        System.out.println("kommt bis vor transf mit " + command.get(7));
         //chech for transformation
         if(command.get(7) != '\u0000'){
             if(zahl != 8 && zahl != 1){
@@ -257,5 +264,12 @@ public class Pawn implements Figure{
 
     public int getFirstMoveTime(){
         return firstMoveTime;
+    }
+
+    @Override
+    public boolean canEatKing(King king, int turnNumber) {
+        String command = "T";
+        command = command +  'x' + king.getFieldNumber().getCharacter()+ "king.getFieldNumber().getInt()+48";
+        return this.canPerformMove(command,turnNumber);
     }
 }

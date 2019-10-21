@@ -6,5 +6,5 @@ public interface Figure {
     void setField(Field field);
     FieldNumber getFieldNumber();
     String getName();
-    //boolean canEatKing(King king);
+    boolean canEatKing(King king, int turnNumber);
 }

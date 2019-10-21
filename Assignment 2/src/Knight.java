@@ -172,4 +172,11 @@ public class Knight implements Figure {
     public String getName() {
         return ((color==Color.BLACK)?"B":"W")+"N";
     }
+
+    @Override
+    public boolean canEatKing(King king, int turnNumber) {
+        String command = "T";
+        command = command +  'x' + king.getFieldNumber().getCharacter()+ "king.getFieldNumber().getInt()+48";
+        return this.canPerformMove(command,turnNumber);
+    }
 }

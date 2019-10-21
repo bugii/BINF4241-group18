@@ -51,7 +51,7 @@ public class Queen implements Figure{
                 comands.set(6,string.charAt(4));
                 string = string.substring(0,4);
             }
-            else if(Character.isAlphabetic(string.charAt(1) )){
+            else if(Character.isLetter(string.charAt(1) )){
                 comands.set(1,string.charAt(1));
                 string = string.charAt(0) + string.substring(2,5);
             }
@@ -69,7 +69,7 @@ public class Queen implements Figure{
                 comands.set(6,string.charAt(3));
                 string = string.substring(0,3);
             }
-            else if(Character.isAlphabetic(string.charAt(1) )){
+            else if(Character.isLetter(string.charAt(1) )){
                 comands.set(1,string.charAt(1));
                 string = string.charAt(0) + string.substring(2,4);
             }
@@ -215,5 +215,12 @@ public class Queen implements Figure{
     @Override
     public String getName() {
         return ((color==Color.BLACK)?"B":"W")+"Q";
+    }
+
+    @Override
+    public boolean canEatKing(King king, int turnNumber) {
+        String command = "T";
+        command = command +  'x' + king.getFieldNumber().getCharacter()+ "king.getFieldNumber().getInt()+48";
+        return this.canPerformMove(command,turnNumber);
     }
 }

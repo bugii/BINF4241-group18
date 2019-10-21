@@ -229,4 +229,11 @@ public class King implements Figure{
 
     }
 
+    @Override
+    public boolean canEatKing(King king, int turnNumber) {
+        String command = "T";
+        command = command +  'x' + king.getFieldNumber().getCharacter()+ "king.getFieldNumber().getInt()+48";
+        return this.canPerformMove(command,turnNumber);
+    }
+
 }
