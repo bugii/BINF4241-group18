@@ -111,7 +111,7 @@ public class Tower implements Figure{
     }
 
     @Override
-    public boolean canPerformMove(String commandOriginal) {
+    public boolean canPerformMove(String commandOriginal, int turNumber) {
 
         if(commandOriginal == "0-0" || commandOriginal == "0-0-0"){
             return canCastle(commandOriginal);

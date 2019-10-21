@@ -102,7 +102,7 @@ public class Bishop implements  Figure{
     }
 
     @Override
-    public boolean canPerformMove(String commandOriginal) {
+    public boolean canPerformMove(String commandOriginal, int turNumber) {
 
         ArrayList<Character> command= this.distill(commandOriginal);
 

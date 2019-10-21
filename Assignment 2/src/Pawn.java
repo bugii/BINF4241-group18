@@ -7,6 +7,7 @@ public class Pawn implements Figure{
     private FieldNumber fieldNumber;
     private Board board;
     private boolean moved;
+    private int firstMoveTime;
 
     public Pawn() {
     }
@@ -93,9 +94,22 @@ public class Pawn implements Figure{
         ArrayList<Character> comands = this.distill(command);
         Field goalField = board.getField(new FieldNumber(comands.get(3),((int)comands.get(4))-48));
         if(comands.get(5) == 'x'){
-            Figure eatenFigurine = goalField.byWhom();
-            goalField.removeFigurine();
-            player.addToEaten(eatenFigurine);
+            if(goalField.isOccupied()) {
+                Figure eatenFigurine = goalField.byWhom();
+                goalField.removeFigurine();
+                player.addToEaten(eatenFigurine);
+            }
+            else { //enpassant
+                FieldNumber eatenFieldNumber = new FieldNumber(goalField.getFieldNumber().getCharacter(),goalField.getFieldNumber().getInt()-color.moveDirection());
+                Field eatenField = board.getField(eatenFieldNumber);
+                Figure eatenFigurine = eatenField.byWhom();
+                eatenField.removeFigurine();
+                player.addToEaten(eatenFigurine);
+            }
+        }
+
+        if(Math.abs(fieldNumber.getInt()-goalField.getFieldNumber().getInt()) == 2){
+            firstMoveTime = turnNumber;
         }
 
         myField.removeFigurine();
@@ -105,7 +119,7 @@ public class Pawn implements Figure{
     }
 
     @Override
-    public boolean canPerformMove(String commandOriginal) {
+    public boolean canPerformMove(String commandOriginal, int turNumber) {
 
         ArrayList<Character> command= this.distill(commandOriginal);
 
@@ -158,6 +172,17 @@ public class Pawn implements Figure{
         }
 
         //check if eating/not Eating match
+        if(command.get(5) == 'x' && !goalField.isOccupied()){ //check for enpassant
+            FieldNumber eatenFieldNumber = new FieldNumber(goalField.getFieldNumber().getCharacter(),goalField.getFieldNumber().getInt()-color.moveDirection());
+            Field eatenField = board.getField(eatenFieldNumber);
+            if(eatenField.isOccupied()) {
+                Figure enPasfigure = eatenField.byWhom();
+                if(enPasfigure.getColor() != this.color && enPasfigure instanceof Pawn && ((Pawn) enPasfigure).getFirstMoveTime() == turNumber-1){
+                    return true;
+                }
+            }
+        }
+
         if ( !( (command.get(5) == 'x' && goalField.isOccupied() && goalField.byWhom().getColor() != color) || (command.get(5) != 'x' && !goalField.isOccupied())) ){
             return false;
         }
@@ -191,5 +216,9 @@ public class Pawn implements Figure{
     @Override
     public String getName() {
         return ((color==Color.BLACK)?"B":"W")+"P";
+    }
+
+    public int getFirstMoveTime(){
+        return firstMoveTime;
     }
 }
