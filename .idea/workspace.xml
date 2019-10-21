@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd348738-8627-4d7f-82ce-0090a831475d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Knight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 2/src/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Tower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 2/src/Player.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,36 +18,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignment 2/src/Pawn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="121" column="73" selection-start-line="121" selection-start-column="73" selection-end-line="121" selection-end-column="73" />
+            <state relative-caret-position="300">
+              <caret line="104" column="75" selection-start-line="104" selection-start-column="75" selection-end-line="104" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Pawn#1;class#Pawn#0" />
                 <element signature="method#distill#0;class#Pawn#0" />
                 <element signature="method#perfromMove#0;class#Pawn#0" />
                 <element signature="e#3826#3887#1" />
                 <element signature="e#3836#3873#1" />
+                <element signature="e#5027#5064#1" />
                 <element signature="method#canPerformMove#0;class#Pawn#0" />
                 <element signature="e#6269#6306#1" />
-                <element signature="e#7783#7784#0" expanded="true" />
-                <element signature="e#7858#7859#0" expanded="true" />
+                <element signature="e#9404#9405#0" expanded="true" />
+                <element signature="e#9479#9480#0" expanded="true" />
                 <element signature="method#setField#0;class#Pawn#0" />
-                <element signature="e#8104#8105#0" expanded="true" />
-                <element signature="e#8206#8207#0" expanded="true" />
-                <element signature="e#8117#8118#0" expanded="true" />
-                <element signature="e#8153#8154#0" expanded="true" />
+                <element signature="e#9725#9726#0" expanded="true" />
+                <element signature="e#9827#9828#0" expanded="true" />
+                <element signature="e#8834#8835#0" expanded="true" />
+                <element signature="e#8870#8871#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment 2/src/Field.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment 2/src/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+              <folding>
+                <element signature="method#transformPawn#0;class#Player#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignment 2/src/Figure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="120">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -83,13 +103,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assignment 2/src/Figure.java" />
         <option value="$PROJECT_DIR$/Assignment 2/src/Tower.java" />
         <option value="$PROJECT_DIR$/Assignment 2/src/Bishop.java" />
         <option value="$PROJECT_DIR$/Assignment 2/src/King.java" />
         <option value="$PROJECT_DIR$/Assignment 2/src/Knight.java" />
         <option value="$PROJECT_DIR$/Assignment 2/src/Queen.java" />
+        <option value="$PROJECT_DIR$/Assignment 2/src/Player.java" />
         <option value="$PROJECT_DIR$/Assignment 2/src/Pawn.java" />
+        <option value="$PROJECT_DIR$/Assignment 2/src/Figure.java" />
       </list>
     </option>
   </component>
@@ -127,7 +148,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571684274502" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571690298686" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -181,7 +202,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1171000" />
+    <option name="totallyTimeSpent" value="3382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -271,13 +292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Figure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment 2/src/Knight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -286,6 +300,16 @@
             <element signature="method#distill#0;class#Knight#0" />
             <element signature="method#perfromMove#0;class#Knight#0" />
             <element signature="method#canPerformMove#0;class#Knight#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+          <folding>
+            <element signature="method#transformPawn#0;class#Player#0" />
           </folding>
         </state>
       </provider>
@@ -302,26 +326,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment 2/src/Pawn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="121" column="73" selection-start-line="121" selection-start-column="73" selection-end-line="121" selection-end-column="73" />
+        <state relative-caret-position="300">
+          <caret line="104" column="75" selection-start-line="104" selection-start-column="75" selection-end-line="104" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Pawn#1;class#Pawn#0" />
             <element signature="method#distill#0;class#Pawn#0" />
             <element signature="method#perfromMove#0;class#Pawn#0" />
             <element signature="e#3826#3887#1" />
             <element signature="e#3836#3873#1" />
+            <element signature="e#5027#5064#1" />
             <element signature="method#canPerformMove#0;class#Pawn#0" />
             <element signature="e#6269#6306#1" />
-            <element signature="e#7783#7784#0" expanded="true" />
-            <element signature="e#7858#7859#0" expanded="true" />
+            <element signature="e#9404#9405#0" expanded="true" />
+            <element signature="e#9479#9480#0" expanded="true" />
             <element signature="method#setField#0;class#Pawn#0" />
-            <element signature="e#8104#8105#0" expanded="true" />
-            <element signature="e#8206#8207#0" expanded="true" />
-            <element signature="e#8117#8118#0" expanded="true" />
-            <element signature="e#8153#8154#0" expanded="true" />
+            <element signature="e#9725#9726#0" expanded="true" />
+            <element signature="e#9827#9828#0" expanded="true" />
+            <element signature="e#8834#8835#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 2/src/Figure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>

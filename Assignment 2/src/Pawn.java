@@ -21,11 +21,23 @@ public class Pawn implements Figure{
         field.placeFigurine(this);
     }
 
-    //array mix: [0]=FigureType, [1] = FigureChar, [2]=FigureInt, [3]=goalChar, [4]=goalint, [5] = eating, [6] = check
+    //array mix: [0]=FigureType, [1] = FigureChar, [2]=FigureInt, [3]=goalChar, [4]=goalint, [5] = eating, [6] = check, [7] = transforming into smoething beautiful
     private ArrayList<Character> distill(String stringOriginal){
         String string = new String(stringOriginal);
-        ArrayList<Character> comands = new ArrayList<>(Arrays.asList('\u0000','\u0000','\u0000','\u0000','\u0000','\u0000','\u0000'));
+        ArrayList<Character> comands = new ArrayList<>(Arrays.asList('\u0000','\u0000','\u0000','\u0000','\u0000','\u0000','\u0000','\u0000'));
         if(string.length() > 0){ comands.set(0,string.charAt(0) );}
+
+        //cheking for the evolution of the pawn into a butterfly
+        char tr = stringOriginal.charAt(stringOriginal.length()-1);
+        switch (tr){
+            case 'Q': comands.set(7,tr);
+            case 'B': comands.set(7,tr);
+            case 'N': comands.set(7,tr);
+            case 'T': comands.set(7,tr);
+        }
+        if( comands.get(7) != '\u0000'){
+            string = string.substring(1,string.length()-1);
+        }
 
         if(string.length() == 7){
             comands.set(6,string.charAt(6));
@@ -116,6 +128,22 @@ public class Pawn implements Figure{
         goalField.placeFigurine(this);
 
         moved = true;
+
+        if(comands.get(7) != '\u0000'){
+            Figure newIdentity = this;  //this is not just a phase-mom!
+            System.out.println("Whats this? \"Pawn\" is evolving");
+            Field myOldField = myField;
+            myField.removeFigurine();
+            myField = null;
+            switch (comands.get(7)){
+                case 'Q': newIdentity= new Queen(myOldField,this.color,board);
+                case 'N': newIdentity= new Knight(myOldField,this.color,board);
+                case 'B': newIdentity= new Bishop(myOldField,this.color,board);
+                case 'T': newIdentity= new Tower(myOldField,this.color,board);
+            }
+            System.out.println("Pawn evolved into "+ newIdentity.getClass().toString());
+            player.transformPawn(this,newIdentity); //this is the end for our old pawn. May a flight of angels take you to your grave
+        }
     }
 
     @Override
@@ -187,6 +215,15 @@ public class Pawn implements Figure{
             return false;
         }
 
+        //chech for transformation
+        if(command.get(7) != '\u0000'){
+            if(zahl != 8 && zahl != 1){
+                return false;
+            }
+        }
+        else if(zahl == 8 || zahl == 1){
+            return false;
+        }
         //does not check for check or checkMate yet
 
         return true;

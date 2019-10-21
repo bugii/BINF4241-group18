@@ -46,7 +46,7 @@ public class Player {
     public String preformMove(String move, int turnNum){
         ArrayList<Figure> movables = new ArrayList<>();
         for(Figure currfig : figures){
-            if(currfig.canPerformMove(move)){
+            if(currfig.canPerformMove(move,turnNum)){
                 movables.add(currfig);
             }
         }
@@ -66,5 +66,10 @@ public class Player {
 
     public void addToEaten(Figure figure){
         eatenFigs.add(figure);
+    }
+
+    public void transformPawn(Pawn oldFigurine, Figure newFigurine){
+        int i = figures.indexOf(oldFigurine);
+        figures.set(i,newFigurine);
     }
 }
