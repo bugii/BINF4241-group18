@@ -20,11 +20,19 @@ public class Board {
     }
 
     public Field getField(FieldNumber fn) {
-        return this.board.get(fn.getCharAsInt()-1).get(fn.getInt()-1);
+        try {
+            return this.board.get(fn.getCharAsInt()-1).get(fn.getInt()-1);
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     public Field getField(int i, int j) {
-        return this.board.get(i-1).get(j-1);
+        try {
+            return this.board.get(i-1).get(j-1);
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     public void printBoard() {
