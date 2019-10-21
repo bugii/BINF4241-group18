@@ -90,6 +90,12 @@ public class Tower implements Figure{
 
     @Override
     public void perfromMove(String command, Player player, int turnNumber) {
+
+        if(command == "0-0" || command == "0-0-0"){
+            doCastke();
+            return;
+        }
+
         ArrayList<Character> comands = this.distill(command);
         Field goalField = board.getField(new FieldNumber(comands.get(3),((int)comands.get(4))-48));
         if(comands.get(5) == 'x'){
@@ -106,6 +112,10 @@ public class Tower implements Figure{
 
     @Override
     public boolean canPerformMove(String commandOriginal) {
+
+        if(commandOriginal == "0-0" || commandOriginal == "0-0-0"){
+            return canCastle(commandOriginal);
+        }
 
         ArrayList<Character> command= this.distill(commandOriginal);
 
@@ -206,5 +216,67 @@ public class Tower implements Figure{
     @Override
     public String getName() {
         return ((color==Color.BLACK)?"B":"W")+"T";
+    }
+
+    private boolean canCastle(String com){
+        //check if correct castle
+        if(com.equals("0-0") && fieldNumber.getCharAsInt() == 1){
+            return false;
+        }
+        else if(com.equals("0-0-0") && fieldNumber.getCharAsInt() == 8){
+            return false;
+        }
+
+        //check if moved, way and stuff
+        if(moved){
+            return false;
+        }
+        Iterable<FieldNumber> way = null;
+        if(fieldNumber.getInt() == 1){
+            way = fieldNumber.lineRight();
+        }
+        else{
+            way = fieldNumber.lineLeft();
+        }
+
+        for(FieldNumber i:way){
+            Field f = board.getField(i);
+            if(f.isOccupied()){
+                Figure fig = board.getField(i).byWhom();
+                if(fig instanceof King && !((King) fig).hasMoved()){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    private void doCastke(){
+
+        Iterable<FieldNumber> way = null;
+        if(fieldNumber.getInt() == 1){
+            way = fieldNumber.lineRight();
+        }
+        else{
+            way = fieldNumber.lineLeft();
+        }
+
+        for(FieldNumber i:way){
+            Field f = board.getField(i);
+            if(f.isOccupied()){
+                Figure fig = board.getField(i).byWhom();
+                if(fig instanceof King && !((King) fig).hasMoved()){
+                    Field newField = fig.getField();
+                    myField.removeFigurine();
+                    ((King) fig).castling(fieldNumber);
+                    newField.placeFigurine(this);
+                }
+            }
+        }
+
     }
 }

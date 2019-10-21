@@ -215,5 +215,18 @@ public class King implements Figure{
         return ((color==Color.BLACK)?"B":"W")+"K";
     }
 
+    boolean hasMoved(){
+        return moved;
+    }
+
+    void castling(FieldNumber fieldNumber){
+        moved = true;
+        Field goalField = board.getField(fieldNumber);
+        myField.removeFigurine();
+        goalField.placeFigurine(this);
+
+        moved = true;
+
+    }
 
 }
