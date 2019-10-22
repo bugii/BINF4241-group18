@@ -37,7 +37,14 @@ public class Game {
 
     private void help(){
         System.out.println("Here is a guide to input:");
-        System.out.println("*cough cough* I'll add this later...");
+        System.out.println("K = King, Q = Queen, B = Bishop, N = Knight, P = Pawn");
+        System.out.println("Standart movement: Pe4, Qc7 etc.");
+        System.out.println("Capturing Pieces: Pxe4, Qxc7 etc.");
+        System.out.println("Dismabiguating moves: Bad5 or B2d5, Qh4xe1 etc.");
+        System.out.println("Promoting Pawns: Pf8Q, Pa1T etc.");
+        System.out.println("Enpasse: Pxe3e.p.");
+        System.out.println("Capturing Pieces: Pxe4, Qxc7 etc.");
+        System.out.println("Castiling: 0-0 (kignside) 0-0-0 (queenside)");
     }
 
     private boolean playTurn(Player player){
@@ -46,11 +53,17 @@ public class Game {
         String turn = scanner.nextLine();
         if(turn.isEmpty()){
             System.out.println("Sorry, but we require an input.");
+            System.out.println("If you require help, pleas type in 'help'");
             return false;
         }
         else if(turn.toLowerCase().equals("help")){
             help();
             return false;
+        }
+        else if(turn.equals("(=)")){
+            stop = true;
+            System.out.println("You have called a draw");
+            return true;
         }
         else if(turn.toLowerCase().equals("stop")){
             stop = true;
