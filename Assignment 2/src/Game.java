@@ -7,6 +7,8 @@ public class Game {
     private Board board;
     private int currentRound = 0;
     private boolean stop = false;
+    private boolean draw = false;
+    private boolean hasWinner = false;
 
     private Game(){
         board = new Board();
@@ -60,14 +62,10 @@ public class Game {
             help();
             return false;
         }
-        else if(turn.equals("(=)")){
+        else if(turn.equals("(=)") || turn.toLowerCase().equals("stop")){
             stop = true;
-            System.out.println("You have called a draw");
-            return true;
-        }
-        else if(turn.toLowerCase().equals("stop")){
-            stop = true;
-            System.out.println("The game will be stopped.");
+            draw = true;
+            System.out.println("You have called a draw.");
             return true;
         }
         else{
@@ -89,12 +87,21 @@ public class Game {
             while (!nextTurn){
                 nextTurn = playTurn(players.get(currentPlayer));
             }
+            if(players.get(currentPlayer).eatenFigs.contains(players.get((currentPlayer + 1)%2).getKing())){
+                hasWinner = true;
+                break;
+            }
             nextTurn = false;
             board.printBoard();
             currentPlayer = (currentPlayer + 1)%2;
             currentRound +=1;
         }
-
+        if(draw){
+            System.out.println("The game ended in a draw.");
+        }
+        else if (hasWinner){
+            System.out.println(players.get(currentPlayer).name + " has won!");
+        }
     }
 
     public static void main(String[] args) {
