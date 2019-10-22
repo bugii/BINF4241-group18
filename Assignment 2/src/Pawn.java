@@ -24,6 +24,7 @@ public class Pawn implements Figure{
     //array mix: [0]=FigureType, [1] = FigureChar, [2]=FigureInt, [3]=goalChar, [4]=goalint, [5] = eating, [6] = check, [7] = transforming into smoething beautiful
     private ArrayList<Character> distill(String stringOriginal){
         String string = new String(stringOriginal);
+        string = string.toUpperCase();
         ArrayList<Character> comands = new ArrayList<>(Arrays.asList('\u0000','\u0000','\u0000','\u0000','\u0000','\u0000','\u0000','\u0000'));
         if(string.length() > 0){ comands.set(0,string.charAt(0) );}
 
@@ -54,11 +55,11 @@ public class Pawn implements Figure{
             } //only 1 can be missing
         }
         if(string.length() == 5) {
-            if(string.charAt(1) == 'x'){
+            if(string.charAt(1) == 'X'){
                 comands.set(5,'x');
                 string = string.charAt(0) + string.substring(2,5);
             }
-            else if(string.charAt(2) == 'x'){
+            else if(string.charAt(2) == 'X'){
                 comands.set(5,'x');
                 string = string.substring(0,2) + string.substring(3,5);
             }
@@ -76,7 +77,7 @@ public class Pawn implements Figure{
             }
         }
         if(string.length() == 4){
-            if(string.charAt(1) == 'x'){
+            if(string.charAt(1) == 'X'){
                 comands.set(5,'x');
                 string = string.charAt(0) + string.substring(2,4);
             }
