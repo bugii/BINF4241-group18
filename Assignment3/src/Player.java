@@ -3,7 +3,7 @@ package Assignment3.src;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Player implements Observer{
+public class Player {
     public String name;
     private Boolean hasName = false;
     public Color colour;
@@ -45,7 +45,7 @@ public class Player implements Observer{
         return figures.get(4);
     }
 
-    public String preformMove(Game game, String move, int turnNum){
+    public String preformMove(String move, int turnNum){
         ArrayList<Figure> movables = new ArrayList<>();
         for(Figure currfig : figures){
             if(currfig.canPerformMove(move,turnNum)){
@@ -62,7 +62,6 @@ public class Player implements Observer{
         else {
             Figure f = movables.get(0);
             f.perfromMove(move, this, turnNum);
-            game.updateLastTurn(this.name + " did move: " + move);
             return "ok";
         }
     }
@@ -74,10 +73,5 @@ public class Player implements Observer{
     public void transformPawn(Pawn oldFigurine, Figure newFigurine){
         int i = figures.indexOf(oldFigurine);
         figures.set(i,newFigurine);
-    }
-
-    @Override
-    public void update(String str) {
-        System.out.println(str);
     }
 }

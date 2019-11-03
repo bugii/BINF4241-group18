@@ -12,7 +12,6 @@ public class Game implements Subject {
     private boolean stop = false;
     private boolean draw = false;
     private boolean hasWinner = false;
-    private String lastTurn = null;
 
     private Game(){
         board = Board.getInstance();
@@ -20,8 +19,7 @@ public class Game implements Subject {
         Player player2 = new Player(Color.BLACK, makeSet(Color.BLACK));
         players.add(player1);
         players.add(player2);
-        registerObserver(player1);
-        registerObserver(player2);
+        registerObserver(board);
     }
 
     private ArrayList<Figure> makeSet(Color colour){
@@ -76,7 +74,7 @@ public class Game implements Subject {
             return true;
         }
         else{
-            String outcome = player.preformMove(this, turn, currentRound);
+            String outcome = player.preformMove(turn, currentRound);
             if(outcome.equals("ok")){
                 return true;
             }
@@ -95,13 +93,13 @@ public class Game implements Subject {
         while(!stop){
             while (!nextTurn){
                 nextTurn = playTurn(players.get(currentPlayer));
+                notifyObservers();
             }
             if(players.get(currentPlayer).eatenFigs.contains(players.get((currentPlayer + 1)%2).getKing())){
                 hasWinner = true;
                 break;
             }
             nextTurn = false;
-            board.printBoard();
             currentPlayer = (currentPlayer + 1)%2;
             currentRound +=1;
         }
@@ -131,12 +129,7 @@ public class Game implements Subject {
     @Override
     public void notifyObservers() {
         for (Observer observer: observers) {
-            observer.update(this.lastTurn);
+            observer.update();
         }
-    }
-
-    public void updateLastTurn(String msg) {
-        this.lastTurn = msg;
-        notifyObservers();
     }
 }

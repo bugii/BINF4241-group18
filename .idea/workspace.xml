@@ -2,48 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd348738-8627-4d7f-82ce-0090a831475d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignment3/src/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment3/src/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BINF4241-group18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BINF4241-group18.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Board_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Board_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Die_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Die_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Field_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Field_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Game_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Game_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Goal_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Goal_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Ladder_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Ladder_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Player_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Player_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Snake_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Snake_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/src/Start_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/Start_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Board.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/FieldNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/FieldNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 2/src/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Tower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/ANSWERS.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/ANSWERS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/images/Board-Singleton-Class.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/images/Board-Singleton-Class.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/images/Board-Singleton-Sequence.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/images/Board-Singleton-Sequence.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/Bishop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/Color.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/Field.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/FieldNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/Figure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/King.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/Knight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/Pawn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/Queen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 3/src/Tower.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment3/ANSWERS.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/ANSWERS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment3/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment3/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment3/src/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment3/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BINF4241-group18/Assignment3/ANSWERS.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BINF4241-group18/Assignment3/ANSWERS.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +136,7 @@
       <workItem from="1571473599089" duration="8524000" />
       <workItem from="1571729040694" duration="1270000" />
       <workItem from="1572724587268" duration="1117000" />
-      <workItem from="1572725718950" duration="10885000" />
+      <workItem from="1572725718950" duration="16249000" />
     </task>
     <servers />
   </component>

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Board {
+public class Board implements Observer {
 
     private static Board uniqueInstance = new Board();
 
@@ -95,5 +95,10 @@ public class Board {
 
     public void placeFigurine (Figure fig,int i, int j){
         this.getField(i, j).placeFigurine(fig);
+    }
+
+    @Override
+    public void update() {
+        this.printBoard();
     }
 }
