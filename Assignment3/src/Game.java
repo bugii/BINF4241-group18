@@ -21,7 +21,8 @@ public class Game implements Subject {
         players.add(player1);
         players.add(player2);
         registerObserver(board);
-        
+        player1.registerObserver(scoreboard);
+        player2.registerObserver(scoreboard);
     }
 
     private ArrayList<Figure> makeSet(Color colour){
@@ -95,13 +96,14 @@ public class Game implements Subject {
         while(!stop){
             while (!nextTurn){
                 nextTurn = playTurn(players.get(currentPlayer));
-                notifyObservers();
             }
             if(players.get(currentPlayer).eatenFigs.contains(players.get((currentPlayer + 1)%2).getKing())){
                 hasWinner = true;
                 break;
             }
             nextTurn = false;
+            notifyObservers();
+            System.out.println(players.get(0).name + " score: " + scoreboard.getScore(players.get(0).getColour()) + ", " + players.get(1).name + " score: " + scoreboard.getScore(players.get(1).getColour()));
             currentPlayer = (currentPlayer + 1)%2;
             currentRound +=1;
         }
