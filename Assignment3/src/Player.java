@@ -68,10 +68,25 @@ public class Player {
 
     public void addToEaten(Figure figure){
         eatenFigs.add(figure);
+        notifyObservers(figure);
     }
 
     public void transformPawn(Pawn oldFigurine, Figure newFigurine){
         int i = figures.indexOf(oldFigurine);
         figures.set(i,newFigurine);
+    }
+    
+    public void registerObserver(Observer observer){
+        observers.add(observer);
+    }
+
+    public void removeObserver (Observer observer){
+        observers.remove(observer);
+    }
+
+    public void notifyObservers (Figure figure){
+        for (Observer observer : observers){
+            observer.update(figure);
+        }
     }
 }
