@@ -9,6 +9,7 @@ public class Player {
     public Color colour;
     public ArrayList<Figure> figures;
     public ArrayList<Figure> eatenFigs = new ArrayList<>();
+    private ArrayList<Observer> observers = new ArrayList<>();
 
 
     public Player(Color colour, ArrayList<Figure> figureSet) {
