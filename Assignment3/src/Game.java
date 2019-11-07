@@ -12,6 +12,7 @@ public class Game implements Subject {
     private boolean stop = false;
     private boolean draw = false;
     private boolean hasWinner = false;
+    private Scoreboard scoreboard;
 
     private Game(){
         board = Board.getInstance();
@@ -20,6 +21,7 @@ public class Game implements Subject {
         players.add(player1);
         players.add(player2);
         registerObserver(board);
+        
     }
 
     private ArrayList<Figure> makeSet(Color colour){
