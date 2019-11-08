@@ -45,3 +45,14 @@ update() method defined, which prints the current state of the board to the cons
 ## Part 2
 
 ## Part 3
+
+**Observer Scoreboard**
+For the third task we decided to go with an observer pattern Scoreboard, as we already had the groundwork for that in our code from the previous task and so could simply expand on that.
+
+In the last assignment we had implemented an array list in the player class that would store all the pieces that players figure had eaten, therefore we thought it most convenient if we made the player to the observable and having it update the relevant Observers (though in this case it is only the one) each time a piece gets eaten.
+
+Since the Scoreboard would have to know whether the eaten piece was a Queen or not we had originally decided to require the figure in the used update function. On closer inspection however it became clear that simply providing the figure’s name would provide sufficient information to the scoreboard without giving it direct access to the figure. If the figure was a queen (name contains a “Q”) the point increase would be five instead of one and its colour (“B” or “W”) would determine who got the points, a white piece giving them to Black’s player and vice versa.
+
+Then there was the question of how all this information should be given out. Since the players have actual names, we didn’t want to simply display “Player 1 score: ” but instead “Jack score: ” however we didn’t want to require Scoreboard to know the player’s names and we also didn’t want to simply send an Array to the game as that could cause the scores to be swapped if one wasn’t sure which colour was first in the array. Instead one calls the score of a specific colour and then the game adds them to the string which displays the score.
+
+**Input for update of Scoreboard:** String (which in this case represents eaten figure’s name)
