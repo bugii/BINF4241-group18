@@ -44,6 +44,9 @@ update() method defined, which prints the current state of the board to the cons
 
 ## Part 2
 
+![Sequence Diagram](images/sequence%20diagram%20Board-1.png "Sequence Part 1")
+![Sequence Diagram](images/sequence%20diagram%20Board-2.png "Sequence Part 2")
+
 ## Part 3
 
 **Observer Scoreboard**
