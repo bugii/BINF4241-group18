@@ -11,12 +11,12 @@ public class Scoreboard implements Observer {
     }
 
     @Override
-    public void update(Figure figure) {
+    public void update(String figureN) {
         int scoreup = 1;
-        if (figure.getName().contains("Q")){
+        if (figureN.contains("Q")){
             scoreup = 5;
         }
-        if (figure.getColor() == Color.WHITE){
+        if (figureN.contains("W")){
             black += scoreup;
         }
         else {
