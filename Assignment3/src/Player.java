@@ -69,7 +69,7 @@ public class Player {
 
     public void addToEaten(Figure figure){
         eatenFigs.add(figure);
-        notifyObservers(figure);
+        notifyObservers(figure.getName());
     }
 
     public void transformPawn(Pawn oldFigurine, Figure newFigurine){
