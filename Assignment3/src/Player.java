@@ -85,9 +85,9 @@ public class Player {
         observers.remove(observer);
     }
 
-    public void notifyObservers (Figure figure){
+    public void notifyObservers (String figureN){
         for (Observer observer : observers){
-            observer.update(figure);
+            observer.update(figureN);
         }
     }
 }
