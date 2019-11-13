@@ -37,7 +37,7 @@ public class Smartphone {
 
             DeviceControler deviceControler = null;
             for (int i = 0; i < deviceControlers.size(); i++) {
-                if(command_to_ex.equals(deviceControlers.get(i).toString())){
+                if(command_to_ex.equals(deviceControlers.get(i).getName())){
                     deviceControler = deviceControlers.get(i);
                     break;
                 }

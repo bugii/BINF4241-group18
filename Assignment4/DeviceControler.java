@@ -32,7 +32,7 @@ public abstract class DeviceControler {
 
             Command command = null;
             for (int i = 0; i < deviceCommands.size(); i++) {
-                if(command_to_ex.equals(deviceCommands.get(i).toString())){
+                if(command_to_ex.equals(deviceCommands.get(i).getName())){
                     command = deviceCommands.get(i);
                     break;
                 }
