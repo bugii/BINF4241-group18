@@ -32,4 +32,10 @@ public class Scoreboard implements Observer {
             return black;
         }
     }
+
+    @Override
+    public void update() {
+        return;
+    }
 }
+

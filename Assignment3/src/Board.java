@@ -101,4 +101,9 @@ public class Board implements Observer {
     public void update() {
         this.printBoard();
     }
+
+    @Override
+    public void update(String figure) {
+        this.printBoard();
+    }
 }
