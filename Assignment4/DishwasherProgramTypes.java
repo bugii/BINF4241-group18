@@ -3,19 +3,19 @@ public enum DishwasherProgramTypes {
 
     int getProgramDuration() {
         if (this == Glasses) {
-            return 1;
+            return 60;
         }
 
         if (this == Plates) {
-            return 2;
+            return 90;
         }
 
         if (this == Pans) {
-            return 3;
+            return 120;
         }
 
         if (this == Mixed) {
-            return 4;
+            return 100;
         }
 
         else return 0;
