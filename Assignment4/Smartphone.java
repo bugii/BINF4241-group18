@@ -11,6 +11,7 @@ public class Smartphone {
     public void start(){
         devices.add(new WashingMachine());
         devices.add(new Dishwasher());
+        devices.add(new CleaningRobot());
 
         for(int i = 0; i < devices.size(); ++i){
             Device device = devices.get(i);

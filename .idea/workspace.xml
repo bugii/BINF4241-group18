@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd348738-8627-4d7f-82ce-0090a831475d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignment4/Dishwasher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/DishwasherCheckTimerCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/DishwasherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/DishwasherProgramTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/DishwasherSelectProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/DishwasherStartCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/DishwasherStopCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/DishwasherSwitchOffCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/DishwasherSwitchOnCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment4/CleaningRobot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotCheckCleaningCompletionCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotEndCleaning.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotSetTimerCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotStartCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment4/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BINF4241-group18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BINF4241-group18/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BINF4241-group18/META-INF/BINF4241-group18.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BINF4241-group18/META-INF/BINF4241-group18.kotlin_module" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +157,8 @@
       <workItem from="1572725718950" duration="16249000" />
       <workItem from="1573219867627" duration="339000" />
       <workItem from="1573658628111" duration="5056000" />
-      <workItem from="1573845483197" duration="8203000" />
+      <workItem from="1573845483197" duration="9376000" />
+      <workItem from="1573911435465" duration="11267000" />
     </task>
     <servers />
   </component>
