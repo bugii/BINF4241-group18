@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class CleaningRobot implements Device, Runnable {
 
@@ -42,27 +43,27 @@ public class CleaningRobot implements Device, Runnable {
                 // Update battery each time you gain 1% (which is done by dividing the total time it takes into
                 // 100 equally big time intervals)
                 for (int i=0; i<101; i++) {
-                    this.setBatteryStatus(i);
+                    this.batteryStatus = i;
                     //System.out.println("new battery " + this.getBatteryStatus());
                     Thread.sleep(200);
                 }
                 System.out.println("Cleaning Robot: Fully charged");
-                this.setCharging(false);
+                this.isCharging = false;
                 this.thread = null;
             }
 
             else if (this.isContinuing) {
 
                 float timeLeft = this.timeToCleanEntireHouse - this.timeSpentCleaning;
-                if (timeLeft != 0) {
+                if (timeLeft != 0 && timeLeft != this.timeToCleanEntireHouse) {
                     System.out.println("Cleaning Robot: Continuing cleaning... (Time left: " + timeLeft + ")");
                     // starts using up the battery. Assume we lose 2% battery per second
                     for (int i=0; i<timeLeft; i++) {
                         Thread.sleep(1000);
                         this.timeSpentCleaning += 1;
-                        int currentBattery = this.getBatteryStatus();
+                        int currentBattery = this.batteryStatus;
                         int newBattery = currentBattery - 2;
-                        this.setBatteryStatus(newBattery);
+                        this.batteryStatus = newBattery;
                         //System.out.println("new battery " + newBattery);
 
                         if (batteryStatus == 0) {
@@ -78,6 +79,7 @@ public class CleaningRobot implements Device, Runnable {
                 }
                 else {
                     System.out.println("Nothing to continue.");
+                    this.isContinuing = false;
                     this.thread = null;
                 }
             }
@@ -85,12 +87,12 @@ public class CleaningRobot implements Device, Runnable {
             else {
 
                 // starts using up the battery. Assume we lose 2% battery per second
-                for (int i=0; i<this.getTimeToCleanEntireHouse(); i++) {
+                for (int i=0; i<this.timeToCleanEntireHouse; i++) {
                     Thread.sleep(1000);
                     this.timeSpentCleaning += 1;
-                    int currentBattery = this.getBatteryStatus();
+                    int currentBattery = this.batteryStatus;
                     int newBattery = currentBattery - 2;
-                    this.setBatteryStatus(newBattery);
+                    this.batteryStatus = newBattery;
                     //System.out.println("new battery " + newBattery);
 
                     if (batteryStatus == 0) {
@@ -110,61 +112,81 @@ public class CleaningRobot implements Device, Runnable {
     }
 
 
-    public int getTimeToCleanEntireHouse() {
-        return timeToCleanEntireHouse;
-    }
-
-    public void setTimeToCleanEntireHouse(int timeToCleanEntireHouse) {
-        this.timeToCleanEntireHouse = timeToCleanEntireHouse;
-    }
-
-    public Boolean getCharging() {
-        return isCharging;
-    }
-
-    public void setCharging(Boolean charging) {
-        isCharging = charging;
-    }
-
     public void returnToBase() {
         System.out.println("Returning back to base");
         // Remove old thread to start new thread (in order to charge the robot)
         this.thread = null;
         this.isCharging = true;
         this.isContinuing = false;
-        this.setThread(new Thread(this));
+        this.thread = new Thread(this);
         thread.start();
     }
 
-    public int getBatteryStatus() {
-        return batteryStatus;
+
+    public void checkBattery() {
+        System.out.println(this.batteryStatus + "%");
     }
 
-    public void setBatteryStatus(int batteryStatus) {
-        this.batteryStatus = batteryStatus;
+    public void checkCleaningCompletion() {
+        int totalTimeNeeded = this.timeToCleanEntireHouse;
+        int timeSpent = this.timeSpentCleaning;
+        System.out.println((float) timeSpent / totalTimeNeeded * 100 + "%");
     }
 
-    public Thread getThread() {
-        return thread;
+    public void completeOutstandingCleaning() {
+        if (this.thread != null) {
+            if (this.isCharging) {
+                System.out.println("Cleaning Robot: Currently charging, please wait until it is fully charged.");
+            }
+            else {
+                System.out.println("Cleaning Robot: Already cleaning. Either wait until done or stop the process.");
+            }
+        }
+
+        else {
+            this.isContinuing = true;
+            this.thread = new Thread(this);
+            this.thread.start();
+        }
     }
 
-    public void setThread(Thread thread) {
-        this.thread = thread;
+    public void endCleaning() {
+        this.returnToBase();
     }
 
-    public Boolean getContinuing() {
-        return isContinuing;
+    public void setTimer() {
+        int time = 0;
+
+        while (time == 0) {
+            System.out.println("Cleaning Robot: Please enter the time it takes to clean (in seconds).");
+            Scanner scanner = new Scanner(System.in);
+            time = scanner.nextInt();
+            this.timeToCleanEntireHouse = time;
+            System.out.println("Cleaning Robot: Time set.");
+        }
     }
 
-    public void setContinuing(Boolean continuing) {
-        isContinuing = continuing;
-    }
+    public void start() {
 
-    public int getTimeSpentCleaning() {
-        return timeSpentCleaning;
-    }
+        // check if charging. If yes -> don't allow to start. Note: If there is no thread active, this means that the robot is not vacuum cleaning
+        // and not charging. This implies that it is fully charged.
 
-    public void setTimeSpentCleaning(int timeSpentCleaning) {
-        this.timeSpentCleaning = timeSpentCleaning;
+        if (this.thread != null) {
+            if (this.isCharging) {
+                System.out.println("Cleaning Robot: Currently charging, please wait until it is fully charged.");
+            }
+            else {
+                System.out.println("Cleaning Robot: Already cleaning. Either wait until done or stop the process.");
+            }
+        }
+        else if (this.timeToCleanEntireHouse == 0) {
+            System.out.println("Please specify how long the cleaning takes before starting.");
+        }
+
+        else {
+            System.out.println("Cleaning Robot: Starting to vacuum clean");
+            this.thread = new Thread(this);
+            this.thread.start();
+        }
     }
 }

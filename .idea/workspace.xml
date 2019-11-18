@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd348738-8627-4d7f-82ce-0090a831475d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignment4/CleaningRobot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotCheckCleaningCompletionCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotEndCleaning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotSetTimerCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotStartCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/CleaningRobot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotCheckBatteryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotCheckBatteryCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotCheckCleaningCompletionCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotCheckCleaningCompletionCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotCompleteOutstandingCleaningCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotCompleteOutstandingCleaningCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotEndCleaning.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotEndCleaning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotSetTimerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotSetTimerCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotStartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/CleaningRobotStartCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/Dishwasher.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Dishwasher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherCheckTimerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/DishwasherCheckTimerCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherSelectProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/DishwasherSelectProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherStartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/DishwasherStartCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherStopCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/DishwasherStopCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherSwitchOffCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/DishwasherSwitchOffCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherSwitchOnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/DishwasherSwitchOnCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BINF4241-group18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BINF4241-group18/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BINF4241-group18/META-INF/BINF4241-group18.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BINF4241-group18/META-INF/BINF4241-group18.kotlin_module" afterDir="false" />
     </list>
@@ -21,6 +28,54 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/git$Game.ic" NAME="Game Coverage Results" MODIFIED="1571478439670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment4/Smartphone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignment4/Dishwasher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-675">
+              <caret line="57" column="144" selection-start-line="57" selection-start-column="144" selection-end-line="57" selection-end-column="144" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment4/DishwasherCheckTimerCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <folding>
+                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment4/DishwasherProgramTypes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,8 +89,60 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assignment4/CleaningRobotCheckBatteryCommand.java" />
+        <option value="$PROJECT_DIR$/Assignment4/CleaningRobotCheckCleaningCompletionCommand.java" />
+        <option value="$PROJECT_DIR$/Assignment4/CleaningRobotEndCleaning.java" />
+        <option value="$PROJECT_DIR$/Assignment4/CleaningRobotSetTimerCommand.java" />
+        <option value="$PROJECT_DIR$/Assignment4/CleaningRobotStartCommand.java" />
+        <option value="$PROJECT_DIR$/Assignment4/CleaningRobot.java" />
+        <option value="$PROJECT_DIR$/Assignment4/CleaningRobotCompleteOutstandingCleaningCommand.java" />
+        <option value="$PROJECT_DIR$/Assignment4/DishwasherCheckTimerCommand.java" />
+        <option value="$PROJECT_DIR$/Assignment4/DishwasherSelectProgram.java" />
+        <option value="$PROJECT_DIR$/Assignment4/DishwasherStartCommand.java" />
+        <option value="$PROJECT_DIR$/Assignment4/DishwasherStopCommand.java" />
+        <option value="$PROJECT_DIR$/Assignment4/DishwasherSwitchOffCommand.java" />
+        <option value="$PROJECT_DIR$/Assignment4/DishwasherSwitchOnCommand.java" />
+        <option value="$PROJECT_DIR$/Assignment4/Dishwasher.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="91" />
+    <option name="y" value="-14" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
   <component name="ProjectId" id="1T4g3okcXfYzpJjBktpsBblKz4W" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BINF4241-group18" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BINF4241-group18" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BINF4241-group18" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BINF4241-group18" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment4" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573664588664" />
@@ -159,8 +266,47 @@
       <workItem from="1573658628111" duration="5056000" />
       <workItem from="1573845483197" duration="9376000" />
       <workItem from="1573911435465" duration="11267000" />
+      <workItem from="1574079866901" duration="2409000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2409000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -171,6 +317,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -191,6 +343,182 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assignment4/CleaningRobot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2604">
+          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5639#5640#0" expanded="true" />
+            <element signature="e#5704#5705#0" expanded="true" />
+            <element signature="e#6563#6564#0" expanded="true" />
+            <element signature="e#6612#6613#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/CleaningRobotCheckBatteryCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/CleaningRobotCheckCleaningCompletionCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding>
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/CleaningRobotController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/CleaningRobotCompleteOutstandingCleaningCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+          <folding>
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/CleaningRobotEndCleaning.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/CleaningRobotStartCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/CleaningRobotSetTimerCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding>
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/DishwasherSwitchOnCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/DishwasherSelectProgram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/DishwasherStartCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/DishwasherStopCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/DishwasherSwitchOffCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/Smartphone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/DishwasherCheckTimerCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/DishwasherProgramTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/Dishwasher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="57" column="144" selection-start-line="57" selection-start-column="144" selection-end-line="57" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

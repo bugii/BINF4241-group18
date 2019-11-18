@@ -8,8 +8,7 @@ public class DishwasherSwitchOnCommand implements Command {
 
     @Override
     public void execute() {
-        dishwasher.setSwitchedOn(true);
-        System.out.println("Dishwasher switched on");
+        dishwasher.switchOn();
     }
 
     @Override

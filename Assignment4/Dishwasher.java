@@ -36,9 +36,9 @@ public class Dishwasher implements Device, Runnable {
     @Override
     public void run() {
         try {
-            System.out.println("Started " + this.chosenProgram + " which takes " + chosenProgram.getProgramDuration() + " minutes" );
+            System.out.println("Started " + this.chosenProgram + " which takes " + chosenProgram.getProgramDuration() + " seconds" );
             threadStartTimestamp = System.currentTimeMillis();
-            Thread.sleep(chosenProgram.getProgramDuration() * 60 * 1000);
+            Thread.sleep(chosenProgram.getProgramDuration() * 1000);
             System.out.println("Dishwasher: Program finished");
             this.thread = null;
         } catch (InterruptedException e) {
@@ -46,31 +46,95 @@ public class Dishwasher implements Device, Runnable {
         }
     }
 
-    public void setSwitchedOn(Boolean switchedOn) {
-        this.switchedOn = switchedOn;
+
+    public void checkTimer() {
+
+        if (this.thread != null) {
+            long passedTimeMillis = System.currentTimeMillis() - this.threadStartTimestamp;
+            int programDurationMillis = this.chosenProgram.getProgramDuration() * 1000;
+            System.out.println("Time left: approx. " + ((programDurationMillis - passedTimeMillis) / 1000) + " seconds");
+        }
+        else if (this.chosenProgram != null){
+            System.out.println("Not currently running, but the chosen program would take " + this.chosenProgram.getProgramDuration() + " seconds");
+        }
+        else if (!this.switchedOn) {
+            System.out.println("Machine not running, turn on first please");
+        }
+        else {
+            System.out.println("Nothing is running");
+        }
     }
 
-    public Boolean getSwitchedOn() {
-        return switchedOn;
+    public void selectProgram() {
+        if (!this.switchedOn) {
+            System.out.println("Please switch on before using");
+        }
+        else if (this.thread != null) {
+            System.out.println("There is already a program running, make sure to stop the old one before" +
+                    "starting a new one");
+        }
+
+        else {
+            String input = "";
+            while (input.equals("")) {
+                System.out.println("Dishwashwer: Please enter Glasses, Plates, Pans, or Mixed");
+                Scanner scanner = new Scanner(System.in);
+                input = scanner.nextLine();
+                switch (input) {
+                    case "Glasses":
+                        this.chosenProgram = DishwasherProgramTypes.Glasses;
+                        break;
+                    case "Plates":
+                        this.chosenProgram = DishwasherProgramTypes.Plates;
+                        break;
+                    case "Pans":
+                        this.chosenProgram = DishwasherProgramTypes.Pans;
+                        break;
+                    case "Mixed":
+                        this.chosenProgram = DishwasherProgramTypes.Mixed;
+                        break;
+                    default:
+                        input = "";
+                        break;
+                }
+            }
+            System.out.println("Dishwasher: type set");
+        }
     }
 
-    public Thread getThread() {
-        return thread;
+    public void start() {
+        if (!this.switchedOn) {
+            System.out.println("Please switch on before using");
+        }
+        else if (this.thread != null) {
+            System.out.println("There is already a program running, make sure to stop the old one before" +
+                    "starting a new one");
+        }
+        else {
+            this.thread = new Thread(this);
+            this.thread.start();
+        }
     }
 
-    public void setThread(Thread thread) {
-        this.thread = thread;
+    public void stop() {
+
+        if (this.thread != null) {
+            this.thread = null;
+            System.out.println("Stopped");
+        }
+        else {
+            System.out.println("Nothing was running anyways");
+        }
     }
 
-    public long getThreadStartTimestamp() {
-        return threadStartTimestamp;
+    public void switchOff() {
+        this.commands.get(4).execute();
+        this.switchedOn = false;
+        System.out.println("Switched off");
     }
 
-    public DishwasherProgramTypes getChosenProgram() {
-        return chosenProgram;
-    }
-
-    public void setChosenProgram(DishwasherProgramTypes chosenProgram) {
-        this.chosenProgram = chosenProgram;
+    public void switchOn() {
+        this.switchedOn = true;
+        System.out.println("Dishwasher switched on");
     }
 }

@@ -8,9 +8,7 @@ public class DishwasherSwitchOffCommand implements Command {
 
     @Override
     public void execute() {
-        dishwasher.getCommands().get(4).execute();
-        dishwasher.setSwitchedOn(false);
-        System.out.println("Switched off");
+        dishwasher.switchOff();
     }
 
     @Override

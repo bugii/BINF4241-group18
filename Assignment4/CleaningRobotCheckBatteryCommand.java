@@ -8,7 +8,7 @@ public class CleaningRobotCheckBatteryCommand implements Command {
 
     @Override
     public void execute() {
-        System.out.println(this.cleaningRobot.getBatteryStatus());
+        cleaningRobot.checkBattery();
     }
 
     @Override

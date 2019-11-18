@@ -8,9 +8,7 @@ public class CleaningRobotCheckCleaningCompletionCommand implements Command {
 
     @Override
     public void execute() {
-        int totalTimeNeeded = cleaningRobot.getTimeToCleanEntireHouse();
-        int timeSpent = cleaningRobot.getTimeSpentCleaning();
-        System.out.println((float) timeSpent / totalTimeNeeded * 100 + "%");
+        cleaningRobot.checkCleaningCompletion();
     }
 
     @Override

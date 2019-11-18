@@ -8,7 +8,7 @@ public class CleaningRobotEndCleaning implements Command {
 
     @Override
     public void execute() {
-        this.cleaningRobot.returnToBase();
+        cleaningRobot.endCleaning();
     }
 
     @Override

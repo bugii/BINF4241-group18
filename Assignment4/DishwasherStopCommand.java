@@ -8,15 +8,7 @@ public class DishwasherStopCommand implements Command {
 
     @Override
     public void execute() {
-
-        if (dishwasher.getThread() != null) {
-            dishwasher.setThread(null);
-            System.out.println("Stopped");
-        }
-        else {
-            System.out.println("Nothing was running anyways");
-        }
-
+        dishwasher.stop();
     }
 
     @Override
