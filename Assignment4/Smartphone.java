@@ -13,6 +13,7 @@ public class Smartphone {
         devices.add(new Dishwasher());
         devices.add(new CleaningRobot());
         devices.add(new Oven());
+        devices.add(new Microwave());
 
         for(int i = 0; i < devices.size(); ++i){
             Device device = devices.get(i);
