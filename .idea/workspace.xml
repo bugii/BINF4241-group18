@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd348738-8627-4d7f-82ce-0090a831475d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assignment4/classDiagram.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BINF4241-group18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BINF4241-group18.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/ttsu/game/DiscreteGameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/softcon/tictactoe/DiscreteGameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/ttsu/game/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/softcon/tictactoe/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/ttsu/game/ai/GameIntelligenceAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/softcon/tictactoe/ai/GameIntelligenceAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/ttsu/game/ai/MinimaxAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/softcon/tictactoe/ai/MinimaxAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/ttsu/game/ai/heuristic/StateEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/softcon/tictactoe/ai/heuristic/StateEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/ttsu/game/ai/heuristic/tictactoe/TicTacToeEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/softcon/tictactoe/ai/heuristic/tictactoe/TicTacToeEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/ttsu/game/tictactoe/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/softcon/tictactoe/tictactoe/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/ttsu/game/tictactoe/TicTacToeBoardPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/softcon/tictactoe/tictactoe/TicTacToeBoardPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/ttsu/game/tictactoe/TicTacToeGameRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/softcon/tictactoe/tictactoe/TicTacToeGameRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/ttsu/game/tictactoe/TicTacToeGameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/softcon/tictactoe/tictactoe/TicTacToeGameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/ttsu/game/tictactoe/TicTacToeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/softcon/tictactoe/tictactoe/TicTacToeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/test/java/ttsu/game/ai/heuristic/tictactoe/TicTacToeEvaluatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/test/java/ttsu/game/ai/tictactoe/TicTacToeMinimaxAgentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/test/java/ttsu/game/tictactoe/GameBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/test/java/softcon/tictactoe/tictactoe/GameBoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/test/java/ttsu/game/tictactoe/TicTacToeBoardPrinterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/test/java/ttsu/game/tictactoe/TicTacToeGameRunnerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/test/java/ttsu/game/tictactoe/TicTacToeGameStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/test/java/softcon/tictactoe/tictactoe/TicTacToeGameStateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BINF4241-group18/.idea/BINF4241-group18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BINF4241-group18/.idea/BINF4241-group18.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BINF4241-group18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BINF4241-group18/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BINF4241-group18/Assignment4/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BINF4241-group18/Assignment4/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BINF4241-group18/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BINF4241-group18/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +42,19 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignment4/Smartphone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="643">
+              <caret line="57" column="42" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -29,6 +67,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assignment5/test.java" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="91" />
     <option name="y" value="-14" />
@@ -36,12 +81,33 @@
     <option name="height" value="1000" />
   </component>
   <component name="ProjectId" id="1T4g3okcXfYzpJjBktpsBblKz4W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573664588664" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assignment3/images" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575026147323" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -68,20 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Smartphone">
-    <configuration name="Game (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package3.Game" />
-      <module name="BINF4241-group18" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.test">
     <configuration name="Game (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Assignment3.src.Game" />
       <module name="BINF4241-group18" />
@@ -122,13 +175,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="BINF4241-group18" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.Smartphone" />
         <item itemvalue="Application.Game (2)" />
         <item itemvalue="Application.Game (3)" />
         <item itemvalue="Application.Game" />
-        <item itemvalue="Application.Game (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -163,8 +223,46 @@
       <workItem from="1573911435465" duration="11267000" />
       <workItem from="1574079866901" duration="2409000" />
       <workItem from="1574277381252" duration="2574000" />
+      <workItem from="1575025628471" duration="735000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="735000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.32894737" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -175,6 +273,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -195,6 +299,29 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assignment5/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding>
+            <element signature="e#51#52#0" expanded="true" />
+            <element signature="e#72#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/gradlew">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment4/Smartphone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="57" column="42" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
