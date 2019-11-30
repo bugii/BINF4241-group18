@@ -1,128 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="Assignment2" />
+      <module name="Assignment1" />
+      <module name="Assignment4" />
+      <module name="Assignment3" />
+      <module name="BINF4241-group18" />
+      <module name="Assignment5" />
+    </loaded-modules>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bd348738-8627-4d7f-82ce-0090a831475d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assignment1/Assignment1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment3/Assignment3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment4/Assignment4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/Assignment5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/assignment5-Part2--tictactoe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/libraries/Gradle__junit_junit_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/libraries/Gradle__org_easytesting_fest_assert_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/libraries/Gradle__org_easytesting_fest_util_1_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/libraries/Gradle__org_mockito_mockito_core_1_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/libraries/Gradle__org_objenesis_objenesis_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/modules/tictactoe-java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/modules/tictactoe-java.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/modules/tictactoe-java.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/DiscreteGameState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/ai/GameIntelligenceAgent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/ai/MinimaxAgent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/ai/heuristic/StateEvaluator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/ai/heuristic/tictactoe/TicTacToeEvaluator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/GameBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeBoardPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeGameRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeGameState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/GameBoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/TicTacToeGameStateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part2/src/test/test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BINF4241-group18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BINF4241-group18.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/Board_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/src/Board_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/Die_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/src/Die_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/Field_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/src/Field_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/Game_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/src/Game_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/Goal_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/src/Goal_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/Ladder_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/src/Ladder_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/Player_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/src/Player_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/Snake_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/src/Snake_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment1/Start_ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment1/src/Start_ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/FieldNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/FieldNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/src/Tower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/CleaningRobot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotCheckBatteryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/CleaningRobotCheckBatteryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotCheckCleaningCompletionCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/CleaningRobotCheckCleaningCompletionCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotCompleteOutstandingCleaningCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/CleaningRobotCompleteOutstandingCleaningCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/CleaningRobotController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotEndCleaning.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/CleaningRobotEndCleaning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotSetTimerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/CleaningRobotSetTimerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/CleaningRobotStartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/CleaningRobotStartCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/DeviceControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/DeviceControler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Dishwasher.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/Dishwasher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherCheckTimerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/DishwasherCheckTimerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/DishwasherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherProgramTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/DishwasherProgramTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherSelectProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/DishwasherSelectProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherStartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/DishwasherStartCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherStopCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/DishwasherStopCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherSwitchOffCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/DishwasherSwitchOffCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/DishwasherSwitchOnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/DishwasherSwitchOnCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Microwave.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/Microwave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/MicrowaveCheckTimerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/MicrowaveCheckTimerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/MicrowaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/MicrowaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/MicrowaveInterruptCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/MicrowaveInterruptCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/MicrowaveSetTemperatureCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/MicrowaveSetTemperatureCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/MicrowaveSetTimerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/MicrowaveSetTimerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/MicrowaveStartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/MicrowaveStartCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/MicrowaveSwitchOffCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/MicrowaveSwitchOffCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/MicrowaveSwitchOnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/MicrowaveSwitchOnCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Oven.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/Oven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/OvenCheckTimerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/OvenCheckTimerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/OvenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/OvenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/OvenInterruptProgramCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/OvenInterruptProgramCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/OvenProgramTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/OvenProgramTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/OvenSelectProgramCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/OvenSelectProgramCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/OvenSetTemperatureCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/OvenSetTemperatureCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/OvenSetTimerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/OvenSetTimerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/OvenStartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/OvenStartCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/OvenSwitchOffCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/OvenSwitchOffCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/OvenSwitchOnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/OvenSwitchOnCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/Smartphone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/WashingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/WashingMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/WashingMachineControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/WashingMachineControler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/WashingMachineSelectDegreeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/WashingMachineSelectDegreeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/WashingMachineSelectTypeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/WashingMachineSelectTypeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/WashingMachineStartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/WashingMachineStartCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/WashingMachineSwitchOffCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/WashingMachineSwitchOffCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/WashingMachineSwitchOnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/WashingMachineSwitchOnCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/WashingMachineWashingTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/src/WashingMachineWashingTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment5/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part3/test/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/Assignment5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/Assignment5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeGameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeGameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/part2/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part2/src/main/main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/part2/src/test/softcon/tictactoe/tictactoe/GameBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/GameBoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/part2/src/test/softcon/tictactoe/tictactoe/TicTacToeGameStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/TicTacToeGameStateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/part2/src/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part2/src/test/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Assignment5/test.iml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,15 +35,63 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/Assignment5/part2/build.gradle">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeMain.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/GameBoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="-490">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/TicTacToeGameStateTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="854">
+              <caret line="78" column="20" lean-forward="true" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignment5/ANSWERS.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="322">
+                <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeGameState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-15">
+              <caret line="102" column="64" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2333#2334#0" expanded="true" />
+                <element signature="e#2368#2369#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -172,24 +119,25 @@
         <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/DiscreteGameState.java" />
         <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/ai/GameIntelligenceAgent.java" />
         <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/ai/heuristic/StateEvaluator.java" />
-        <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/GameBoard.java" />
         <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/ai/heuristic/tictactoe/TicTacToeEvaluator.java" />
         <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/Position.java" />
         <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeBoardPrinter.java" />
         <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/ai/MinimaxAgent.java" />
         <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeGameRunner.java" />
-        <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeGameState.java" />
         <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeMain.java" />
-        <option value="$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/GameBoardTest.java" />
         <option value="$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/TicTacToeGameStateTest.java" />
+        <option value="$PROJECT_DIR$/Assignment5/part2/src/main/softcon/tictactoe/tictactoe/TicTacToeMain.java" />
+        <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/GameBoard.java" />
+        <option value="$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/GameBoardTest.java" />
+        <option value="$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeGameState.java" />
+        <option value="$PROJECT_DIR$/Assignment5/ANSWERS.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="91" />
-    <option name="y" value="-14" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1913" />
+    <option name="width" value="2157" />
+    <option name="height" value="1407" />
   </component>
   <component name="ProjectId" id="1T4g3okcXfYzpJjBktpsBblKz4W" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -238,6 +186,16 @@
               <item name="part2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BINF4241-group18" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BINF4241-group18" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
+              <item name="part2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -247,7 +205,35 @@
               <item name="part2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
+              <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BINF4241-group18" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BINF4241-group18" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
+              <item name="part2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BINF4241-group18" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BINF4241-group18" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
+              <item name="part2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BINF4241-group18" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BINF4241-group18" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
+              <item name="part2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tictactoe" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -267,23 +253,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575026147323" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/assignment5/assignment5-Part2--tictactoe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dario\Desktop\BINF4241-group18\Assignment5\part3\test" />
-      <recent name="C:\Users\dario\Desktop\BINF4241-group18\Assignment5\part2" />
-      <recent name="C:\Users\dario\Desktop\BINF4241-group18\Assignment5\test" />
-      <recent name="C:\Users\dario\Desktop\BINF4241-group18\Assignment5\src" />
-      <recent name="C:\Users\dario\Desktop\BINF4241-group18\Assignment4\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Assignment3/images" />
       <recent name="$PROJECT_DIR$/Assignment 3/images" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dario\Desktop\BINF4241-group18\Assignment5\part2\src\test\java" />
+      <recent name="C:\Users\dario\Desktop\BINF4241-group18\Assignment5\part2\src" />
+      <recent name="C:\Users\dario\Desktop\BINF4241-group18\Assignment5\part2\src\main" />
+      <recent name="C:\Users\dario\Desktop\BINF4241-group18\Assignment5\part2\src\main\java" />
+      <recent name="C:\Users\dario\Desktop\BINF4241-group18\Assignment5\part3\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -298,16 +284,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TicTacToeMain (1)">
-    <configuration name="Game (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Game" />
-      <module name="Assignment2" />
+  <component name="RunManager" selected="JUnit.TicTacToeGameStateTest (1)">
+    <configuration name="GameBoardTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="softcon.tictactoe.tictactoe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="softcon.tictactoe.tictactoe" />
+      <option name="MAIN_CLASS_NAME" value="softcon.tictactoe.tictactoe.GameBoardTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToeMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="softcon.tictactoe.tictactoe.TicTacToeMain" />
+    <configuration name="GameBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment5" />
       <extension name="coverage">
         <pattern>
@@ -315,61 +308,73 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="softcon.tictactoe.tictactoe" />
+      <option name="MAIN_CLASS_NAME" value="softcon.tictactoe.tictactoe.GameBoardTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java.softcon.tictactoe.tictactoe.TicTacToeMain" />
-      <module name="Assignment5" />
+    <configuration name="TicTacToeGameStateTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java.softcon.tictactoe.tictactoe.*" />
+          <option name="PATTERN" value="softcon.tictactoe.tictactoe.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="softcon.tictactoe.tictactoe" />
+      <option name="MAIN_CLASS_NAME" value="softcon.tictactoe.tictactoe.TicTacToeGameStateTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="BINF4241-group18" />
+    <configuration name="TicTacToeGameStateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Assignment5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="softcon.tictactoe.tictactoe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="softcon.tictactoe.tictactoe" />
+      <option name="MAIN_CLASS_NAME" value="softcon.tictactoe.tictactoe.TicTacToeGameStateTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/dario/Desktop/BINF4241-group18/Assignment5/part2/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Assignment5/part2/build.gradle" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="TicTacToeGameStateTest.isOverWin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Assignment5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="softcon.tictactoe.tictactoe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="softcon.tictactoe.tictactoe" />
+      <option name="MAIN_CLASS_NAME" value="softcon.tictactoe.tictactoe.TicTacToeGameStateTest" />
+      <option name="METHOD_NAME" value="isOverWin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Application.test" />
-      <item itemvalue="Application.Game (1)" />
-      <item itemvalue="Application.TicTacToeMain" />
-      <item itemvalue="Gradle.C:/Users/dario/Desktop/BINF4241-group18/Assignment5/part2/build.gradle" />
-      <item itemvalue="Application.TicTacToeMain (1)" />
+      <item itemvalue="JUnit.GameBoardTest" />
+      <item itemvalue="JUnit.TicTacToeGameStateTest" />
+      <item itemvalue="JUnit.TicTacToeGameStateTest.isOverWin" />
+      <item itemvalue="JUnit.GameBoardTest (1)" />
+      <item itemvalue="JUnit.TicTacToeGameStateTest (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TicTacToeMain (1)" />
-        <item itemvalue="Application.TicTacToeMain" />
-        <item itemvalue="Gradle.C:/Users/dario/Desktop/BINF4241-group18/Assignment5/part2/build.gradle" />
-        <item itemvalue="Application.Game (1)" />
-        <item itemvalue="Application.test" />
+        <item itemvalue="JUnit.TicTacToeGameStateTest (1)" />
+        <item itemvalue="JUnit.GameBoardTest (1)" />
+        <item itemvalue="JUnit.GameBoardTest" />
+        <item itemvalue="JUnit.TicTacToeGameStateTest" />
+        <item itemvalue="JUnit.TicTacToeGameStateTest.isOverWin" />
       </list>
     </recent_temporary>
   </component>
@@ -405,17 +410,50 @@
       <workItem from="1574079866901" duration="2409000" />
       <workItem from="1574277381252" duration="2574000" />
       <workItem from="1575025628471" duration="735000" />
+      <workItem from="1575108167557" duration="5903000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TicTacToeGameStateTest_startingPlayerIsX - 2019.11.30 at 11h 21m 14s.xml">
+      <configuration name="TicTacToeGameStateTest.startingPlayerIsX" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TicTacToeGameStateTest - 2019.11.30 at 11h 21m 23s.xml">
+      <configuration name="TicTacToeGameStateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TicTacToeGameStateTest_isOverWin - 2019.11.30 at 11h 23m 16s.xml">
+      <configuration name="TicTacToeGameStateTest.isOverWin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TicTacToeGameStateTest - 2019.11.30 at 11h 23m 24s.xml">
+      <configuration name="TicTacToeGameStateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TicTacToeGameStateTest - 2019.11.30 at 11h 27m 05s.xml">
+      <configuration name="TicTacToeGameStateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TicTacToeGameStateTest - 2019.11.30 at 11h 31m 14s.xml">
+      <configuration name="TicTacToeGameStateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameBoardTest - 2019.11.30 at 11h 56m 28s.xml">
+      <configuration name="GameBoardTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameBoardTest_(1) - 2019.11.30 at 12h 05m 53s.xml">
+      <configuration name="GameBoardTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TicTacToeGameStateTest_(1) - 2019.11.30 at 12h 06m 06s.xml">
+      <configuration name="TicTacToeGameStateTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TicTacToeGameStateTest_(1) - 2019.11.30 at 16h 57m 21s.xml">
+      <configuration name="TicTacToeGameStateTest (1)" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3574000" />
+    <option name="totallyTimeSpent" value="10951000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1913" y="0" width="2157" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17215069" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -424,14 +462,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23783359" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32827735" />
@@ -546,20 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part2/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/DiscreteGameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -598,16 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/GameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeBoardPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -628,25 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeGameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#1794#1813#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/GameBoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1346">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment5/part3/test/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -654,23 +649,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/TicTacToeGameStateTest.java">
+    <entry file="file://$PROJECT_DIR$/Assignment5/part2/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/DiscreteGameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/GameBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="105" column="3" selection-start-line="105" selection-start-column="3" selection-end-line="105" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/GameBoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-490">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/test/java/softcon/tictactoe/tictactoe/TicTacToeGameStateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="854">
+          <caret line="78" column="20" lean-forward="true" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part2/src/main/java/softcon/tictactoe/tictactoe/TicTacToeGameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="102" column="64" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2333#2334#0" expanded="true" />
+            <element signature="e#2368#2369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/ANSWERS.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="322">
+            <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

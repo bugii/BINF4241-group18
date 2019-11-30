@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/Assignment4/Assignment4.iml" filepath="$PROJECT_DIR$/Assignment4/Assignment4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Assignment5/Assignment5.iml" filepath="$PROJECT_DIR$/Assignment5/Assignment5.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/BINF4241-group18.iml" filepath="$PROJECT_DIR$/.idea/BINF4241-group18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment5/part2/src/main/main.iml" filepath="$PROJECT_DIR$/Assignment5/part2/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment5/part2/src/test/test.iml" filepath="$PROJECT_DIR$/Assignment5/part2/src/test/test.iml" />
     </modules>
   </component>
 </project>
