@@ -10,7 +10,6 @@
 |-----------|------------------|-------------------|
 |markOnBoard & markTwice|mark method actually returned true if the field was still empty, and when it was actually possible to set mark the field, it returned false.| Both was fixed by switching the false and true statements inside the mark function of Game.|
 |getOpenPositions & getOpenPositionsAll|When checking for open positions the getOpenPositions function did not check fields in the first column, and since the tests test for empty values in the first column, they failed.|It was fixed by starting the second for-loop at index 0 aswell.|
-|
 
 ### TicTacToeGameStateTest
 
