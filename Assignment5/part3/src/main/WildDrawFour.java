@@ -1,7 +1,7 @@
 package main;
 
 public class WildDrawFour extends Card {
-    public WildDrawFour(Cardtype cardtype, Color color) {
-        super(cardtype, color);
+    public WildDrawFour() {
+        super(Cardtype.wildDrawFour, Color.black);
     }
 }

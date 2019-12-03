@@ -40,7 +40,6 @@
 - playCard(Card card, player player)
    Should only accept Players who are in this game. Should only accept cards that are playable. It must be Players turn, Player can't have played a card this turn. Is only calleable if the turn has started.
    Puts the card on top of the discard pile.
-   If Player has won, it informes other players and ends the game.
    returns nothing
 - sayUno(Player player)
    The player should be in the game, they should only have one card in hand and should have played a card already and no-one else has played a card since.
@@ -56,6 +55,7 @@
    returns nothing
 - endTurn(Player player)
    Player should be in this games. It should be Players turn and they should have played a card or/and have drawn a card.
+   If this player has 0 Card, it should end the game
    returns nothing.
 #####"Card" also has two methodes:
 - whenPlayed(Game game, Player player)

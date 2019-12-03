@@ -1,7 +1,7 @@
 package main;
 
 public class DrawTwo extends Card {
-    public DrawTwo(Cardtype cardtype, Color color) {
-        super(cardtype, color);
+    public DrawTwo(Color color) {
+        super(Cardtype.drawtwo, color);
     }
 }

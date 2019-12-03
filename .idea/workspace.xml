@@ -13,22 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bd348738-8627-4d7f-82ce-0090a831475d" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/Cardtype.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/DrawTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/Reverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/Skip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/TurnState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/Wild.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/WildDrawFour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment5/part3/test/main/GameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment5/ANSWERS.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/ANSWERS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment5/Assignment5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/Assignment5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/ttsu/game/DiscreteGameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/main/java/softcon/tictactoe/DiscreteGameState.java" afterDir="false" />
@@ -48,8 +34,12 @@
       <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/test/java/ttsu/game/tictactoe/TicTacToeBoardPrinterTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/test/java/ttsu/game/tictactoe/TicTacToeGameRunnerTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/test/java/ttsu/game/tictactoe/TicTacToeGameStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/assignment5-Part2--tictactoe/src/test/java/softcon/tictactoe/tictactoe/TicTacToeGameStateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment5/part2/src/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part2/src/test/test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment5/part3/test/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/part3/src/main/DrawTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/DrawTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/part3/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/part3/src/main/Reverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/Reverse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/part3/src/main/Wild.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/Wild.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/part3/src/main/WildDrawFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part3/src/main/WildDrawFour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment5/part3/test/main/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment5/part3/test/main/GameTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/WildDrawFour.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#112#113#0" expanded="true" />
                 <element signature="e#150#151#0" expanded="true" />
@@ -88,38 +78,110 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="75">
+              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
               <folding>
+                <element signature="e#380#381#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
                 <element signature="e#344#345#0" expanded="true" />
                 <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignment5/part3/test/main/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="162" column="40" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
+            <state relative-caret-position="3540">
+              <caret line="602" column="5" lean-forward="true" selection-start-line="602" selection-start-column="5" selection-end-line="602" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#testGameCorrectCreation#0;class#GameTest#0" />
+                <element signature="method#testGameCreationCorrect#0;class#GameTest#0" />
                 <element signature="method#testGameCreationWithTooManyPlayers#0;class#GameTest#0" />
-                <element signature="method#testGameCreationWithTooManyPlayers#1;class#GameTest#0" />
-                <element signature="method#testGameCreationWithTooFewPlayers#1;class#GameTest#0" />
-                <element signature="method#TestGameCreationWithExternalStartingPlayer#0;class#GameTest#0" />
-                <element signature="method#testStartTurnWithIllegalPlayer#0;class#GameTest#0" />
+                <element signature="method#testGameCreationWithTooFewPlayers#0;class#GameTest#0" />
+                <element signature="method#testGameCreationWithNoPlayers#0;class#GameTest#0" />
+                <element signature="method#testGameCreationWithExternalStartingPlayer#0;class#GameTest#0" />
                 <element signature="method#testStartTurnWithPlayerWhosTurnItIsnt#0;class#GameTest#0" />
                 <element signature="method#testStartTurnWithNormalCard#0;class#GameTest#0" />
                 <element signature="method#testStartingTurnWithSkipCard#0;class#GameTest#0" />
                 <element signature="method#testStartingTurnWithReverseCard#0;class#GameTest#0" />
+                <element signature="method#testStartTurnWithDrawTwo#0;class#GameTest#0" />
+                <element signature="method#testStartTurnWithWild#0;class#GameTest#0" />
+                <element signature="method#testPlayableNormalCase#0;class#GameTest#0" />
+                <element signature="method#testPlayableNormalCase#1;class#GameTest#0" />
+                <element signature="method#testPlayableNormalCase#0;class#GameTest#0" />
+                <element signature="method#testPlayableNormalCase#0;class#GameTest#0" />
+                <element signature="method#testPlayableOnWildCard#1;class#GameTest#0" />
+                <element signature="method#testPlayableOnWildCard#1;class#GameTest#0" />
+                <element signature="method#testPlayableOnSpecial#1;class#GameTest#0" />
+                <element signature="method#testPlayableOnSpecialSameSpecial#1;class#GameTest#0" />
+                <element signature="method#testPlayableWild#0;class#GameTest#0" />
+                <element signature="method#testPlayableNormalCaseColor#1;class#GameTest#0" />
+                <element signature="method#testPlayableIlligalPlayer#1;class#GameTest#0" />
+                <element signature="method#testPlayCardWrongPlayer#0;class#GameTest#0" />
+                <element signature="method#testPlayCardWrongPlayer#1;class#GameTest#0" />
+                <element signature="method#testPlayCardWrongPlayer#1;class#GameTest#0" />
+                <element signature="method#testPlayCardNormalCase#0;class#GameTest#0" />
+                <element signature="e#11165#11604#0" />
+                <element signature="method#testPlayCardNormalCase#1;class#GameTest#0" />
+                <element signature="method#testPlayCardNormalCase#1;class#GameTest#0" />
+                <element signature="method#testPlayCardIllegalCard#0;class#GameTest#0" />
+                <element signature="method#testPlayCardSpecialCard#1;class#GameTest#0" />
+                <element signature="e#13203#13313#0" />
+                <element signature="e#13349#13355#0" expanded="true" />
+                <element signature="e#13584#13955#0" />
+                <element signature="e#13730#13736#0" expanded="true" />
+                <element signature="e#14203#14400#0" />
+                <element signature="e#14358#14364#0" expanded="true" />
+                <element signature="e#14573#14940#0" />
+                <element signature="e#14731#14737#0" expanded="true" />
+                <element signature="e#15191#15634#0" />
+                <element signature="e#15344#15350#0" expanded="true" />
+                <element signature="e#15713#16253#0" />
+                <element signature="e#15866#15872#0" expanded="true" />
+                <element signature="e#15713#16253#0" />
+                <element signature="e#15866#15872#0" expanded="true" />
+                <element signature="e#16899#17439#0" />
+                <element signature="e#17263#17794#0" />
+                <element signature="e#17424#17430#0" expanded="true" />
+                <element signature="e#18367#18474#0" />
+                <element signature="e#18624#18876#0" />
+                <element signature="e#18824#19021#0" />
+                <element signature="e#19019#19208#0" />
+                <element signature="e#19274#19376#0" />
+                <element signature="e#19478#19683#0" />
+                <element signature="e#19692#19896#0" />
+                <element signature="e#19881#20068#0" />
+                <element signature="e#20069#20251#0" />
+                <element signature="e#20257#20439#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Wild.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+              <folding>
+                <element signature="e#96#97#0" expanded="true" />
+                <element signature="e#134#135#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,7 +191,7 @@
         <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Skip.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -181,14 +243,14 @@
         <option value="$PROJECT_DIR$/Assignment5/part3/src/main/Color.java" />
         <option value="$PROJECT_DIR$/Assignment5/part3/src/main/Card.java" />
         <option value="$PROJECT_DIR$/Assignment5/part3/src/main/Player.java" />
-        <option value="$PROJECT_DIR$/Assignment5/part3/src/main/Reverse.java" />
-        <option value="$PROJECT_DIR$/Assignment5/part3/src/main/DrawTwo.java" />
-        <option value="$PROJECT_DIR$/Assignment5/part3/src/main/Wild.java" />
-        <option value="$PROJECT_DIR$/Assignment5/part3/src/main/WildDrawFour.java" />
         <option value="$PROJECT_DIR$/Assignment5/part3/test/main/WildDrawFourTest.java" />
         <option value="$PROJECT_DIR$/Assignment5/part3/src/main/Skip.java" />
         <option value="$PROJECT_DIR$/Assignment5/part3/src/main/Direction.java" />
         <option value="$PROJECT_DIR$/Assignment5/part3/src/main/Game.java" />
+        <option value="$PROJECT_DIR$/Assignment5/part3/src/main/DrawTwo.java" />
+        <option value="$PROJECT_DIR$/Assignment5/part3/src/main/Reverse.java" />
+        <option value="$PROJECT_DIR$/Assignment5/part3/src/main/Wild.java" />
+        <option value="$PROJECT_DIR$/Assignment5/part3/src/main/WildDrawFour.java" />
         <option value="$PROJECT_DIR$/Assignment5/part3/test/main/GameTest.java" />
       </list>
     </option>
@@ -206,7 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -245,6 +306,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,7 +317,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575317253259" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575400514935" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -424,13 +486,11 @@
       <workItem from="1575025628471" duration="735000" />
       <workItem from="1575108167557" duration="5903000" />
       <workItem from="1575305959773" duration="10468000" />
+      <workItem from="1575395464926" duration="5037000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest - 2019.12.02 at 20h 07m 48s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameTest - 2019.12.02 at 20h 19m 16s.xml">
       <configuration name="GameTest" configurationId="JUnit" />
     </history-entry>
@@ -458,15 +518,18 @@
     <history-entry file="GameTest - 2019.12.02 at 20h 46m 05s.xml">
       <configuration name="GameTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameTest - 2019.12.03 at 19h 58m 41s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21419000" />
+    <option name="totallyTimeSpent" value="26456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12553419" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12713675" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -475,7 +538,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3607456" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3607456" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -538,7 +601,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Assignment5/part3/test/main/GameTest.java</url>
-          <line>126</line>
+          <line>131</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -675,20 +738,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part3/test/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/t.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part3/test/test.java" />
+    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/t.java" />
     <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Color.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -727,57 +778,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Reverse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#102#103#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/DrawTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="e#102#103#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Wild.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#96#97#0" expanded="true" />
-            <element signature="e#134#135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part3/test/main/WildDrawFourTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part3/test/main/WildDrawFourTest.java" />
     <entry file="file://$PROJECT_DIR$/Assignment5/ANSWERS.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -798,27 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/Assignment5.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/WildDrawFour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding>
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#150#151#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Skip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Direction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -826,35 +806,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Game.java">
+    <entry file="file://$PROJECT_DIR$/Assignment5/Assignment5.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Skip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="75">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/DrawTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding>
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#102#103#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Reverse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Wild.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding>
+            <element signature="e#96#97#0" expanded="true" />
+            <element signature="e#134#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/WildDrawFour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#112#113#0" expanded="true" />
+            <element signature="e#150#151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignment5/part3/test/main/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="162" column="40" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
+        <state relative-caret-position="3540">
+          <caret line="602" column="5" lean-forward="true" selection-start-line="602" selection-start-column="5" selection-end-line="602" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#testGameCorrectCreation#0;class#GameTest#0" />
+            <element signature="method#testGameCreationCorrect#0;class#GameTest#0" />
             <element signature="method#testGameCreationWithTooManyPlayers#0;class#GameTest#0" />
-            <element signature="method#testGameCreationWithTooManyPlayers#1;class#GameTest#0" />
-            <element signature="method#testGameCreationWithTooFewPlayers#1;class#GameTest#0" />
-            <element signature="method#TestGameCreationWithExternalStartingPlayer#0;class#GameTest#0" />
-            <element signature="method#testStartTurnWithIllegalPlayer#0;class#GameTest#0" />
+            <element signature="method#testGameCreationWithTooFewPlayers#0;class#GameTest#0" />
+            <element signature="method#testGameCreationWithNoPlayers#0;class#GameTest#0" />
+            <element signature="method#testGameCreationWithExternalStartingPlayer#0;class#GameTest#0" />
             <element signature="method#testStartTurnWithPlayerWhosTurnItIsnt#0;class#GameTest#0" />
             <element signature="method#testStartTurnWithNormalCard#0;class#GameTest#0" />
             <element signature="method#testStartingTurnWithSkipCard#0;class#GameTest#0" />
             <element signature="method#testStartingTurnWithReverseCard#0;class#GameTest#0" />
+            <element signature="method#testStartTurnWithDrawTwo#0;class#GameTest#0" />
+            <element signature="method#testStartTurnWithWild#0;class#GameTest#0" />
+            <element signature="method#testPlayableNormalCase#0;class#GameTest#0" />
+            <element signature="method#testPlayableNormalCase#1;class#GameTest#0" />
+            <element signature="method#testPlayableNormalCase#0;class#GameTest#0" />
+            <element signature="method#testPlayableNormalCase#0;class#GameTest#0" />
+            <element signature="method#testPlayableOnWildCard#1;class#GameTest#0" />
+            <element signature="method#testPlayableOnWildCard#1;class#GameTest#0" />
+            <element signature="method#testPlayableOnSpecial#1;class#GameTest#0" />
+            <element signature="method#testPlayableOnSpecialSameSpecial#1;class#GameTest#0" />
+            <element signature="method#testPlayableWild#0;class#GameTest#0" />
+            <element signature="method#testPlayableNormalCaseColor#1;class#GameTest#0" />
+            <element signature="method#testPlayableIlligalPlayer#1;class#GameTest#0" />
+            <element signature="method#testPlayCardWrongPlayer#0;class#GameTest#0" />
+            <element signature="method#testPlayCardWrongPlayer#1;class#GameTest#0" />
+            <element signature="method#testPlayCardWrongPlayer#1;class#GameTest#0" />
+            <element signature="method#testPlayCardNormalCase#0;class#GameTest#0" />
+            <element signature="e#11165#11604#0" />
+            <element signature="method#testPlayCardNormalCase#1;class#GameTest#0" />
+            <element signature="method#testPlayCardNormalCase#1;class#GameTest#0" />
+            <element signature="method#testPlayCardIllegalCard#0;class#GameTest#0" />
+            <element signature="method#testPlayCardSpecialCard#1;class#GameTest#0" />
+            <element signature="e#13203#13313#0" />
+            <element signature="e#13349#13355#0" expanded="true" />
+            <element signature="e#13584#13955#0" />
+            <element signature="e#13730#13736#0" expanded="true" />
+            <element signature="e#14203#14400#0" />
+            <element signature="e#14358#14364#0" expanded="true" />
+            <element signature="e#14573#14940#0" />
+            <element signature="e#14731#14737#0" expanded="true" />
+            <element signature="e#15191#15634#0" />
+            <element signature="e#15344#15350#0" expanded="true" />
+            <element signature="e#15713#16253#0" />
+            <element signature="e#15866#15872#0" expanded="true" />
+            <element signature="e#15713#16253#0" />
+            <element signature="e#15866#15872#0" expanded="true" />
+            <element signature="e#16899#17439#0" />
+            <element signature="e#17263#17794#0" />
+            <element signature="e#17424#17430#0" expanded="true" />
+            <element signature="e#18367#18474#0" />
+            <element signature="e#18624#18876#0" />
+            <element signature="e#18824#19021#0" />
+            <element signature="e#19019#19208#0" />
+            <element signature="e#19274#19376#0" />
+            <element signature="e#19478#19683#0" />
+            <element signature="e#19692#19896#0" />
+            <element signature="e#19881#20068#0" />
+            <element signature="e#20069#20251#0" />
+            <element signature="e#20257#20439#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment5/part3/src/main/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
           </folding>
         </state>
       </provider>

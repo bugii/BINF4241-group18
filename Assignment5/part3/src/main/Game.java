@@ -9,7 +9,16 @@ public class Game {
     private ArrayList<Card> discardPile;
     private ArrayList<Player> players;
     private Player currentPlayer;
-    private Direction direction
+    private Direction direction;
+    private boolean firstTurn = true;
+
+    public boolean isFirstTurn() {
+        return firstTurn;
+    }
+
+    protected void setFirstTurn(boolean firstTurn) {
+        this.firstTurn = firstTurn;
+    }
 
     public Direction getDirection() {
         return direction;
