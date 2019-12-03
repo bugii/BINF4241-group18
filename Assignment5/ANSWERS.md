@@ -57,14 +57,6 @@
    Player should be in this games. It should be Players turn and they should have played a card or/and have drawn a card.
    If this player has 0 Card, it should end the game
    returns nothing.
-#####"Card" also has two methodes:
-- whenPlayed(Game game, Player player)
-   Player shoudl be part of the game.
-   If the card was a wild card, it should ask the player what collor he wants and store that information in the card.
-   returns nothing
-- onNextPlayer(Game game, Player player)
-   Player shoudl be part of the game.
-   Should have the drawn or skip-effect, discribed by the rules.
 
 
 

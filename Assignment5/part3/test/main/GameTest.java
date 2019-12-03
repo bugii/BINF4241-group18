@@ -16,6 +16,9 @@ class GameTest {
     Player currentPlayer;
 
 
+    /**
+     * set-up game, so that I can test on a running game with 5 players, and player 0 as the current player
+     */
     @BeforeEach
     public void setUp(){
         players = new ArrayList<>();
@@ -33,6 +36,10 @@ class GameTest {
     /////////////////
     //creation Tests
     /////////////////
+
+    /**
+     * tests that the constructor of the game creates a game with all players, gives each 7 cards and a discard pile with one card, and that the starting player is assigned correctly
+     */
     @Test
     public void testGameCreationCorrect(){
 
@@ -53,9 +60,16 @@ class GameTest {
 
             assertEquals(players,testGame.getPlayers());
             assertEquals(testStartingPlayer,testGame.getCurrentPlayer());
+            for(int k = 0; k < players.size(); ++k){
+                assertEquals(7,players.get(i).getCards().size());
+            }
+            assertEquals(1,game.getDiscardPile().size());
         }
     }
 
+    /**
+     * assert that the constructor throws an error when initializing with too many players
+     */
     @Test
     public void testGameCreationWithTooManyPlayers(){
 
@@ -73,6 +87,9 @@ class GameTest {
         assertThrows(IllegalArgumentException.class , () -> new Game(testPlayers,testStartingPlayer));
     }
 
+    /**
+     * assert that the constructor throws an error when initializing with too few players
+     */
     @Test
     public void testGameCreationWithTooFewPlayers(){
 
@@ -90,6 +107,9 @@ class GameTest {
         assertThrows(IllegalArgumentException.class , () -> new Game(testPlayers,testStartingPlayer));
     }
 
+    /**
+     * assert that the constructor throws an error when initializing with no players
+     */
     @Test
     public void testGameCreationWithNoPlayers(){
 
@@ -103,6 +123,10 @@ class GameTest {
         assertThrows(IllegalArgumentException.class , () -> new Game(testPlayers,testStartingPlayer));
     }
 
+
+    /**
+     * assert that the constructor throws an error when initializing with a players as starting player that is not in the game
+     */
     @Test
     public void testGameCreationWithExternalStartingPlayer(){
 
@@ -117,16 +141,29 @@ class GameTest {
     ///////////////////
     //StartTurn
     ///////////////////
+
+    /**
+     * asserts that "startTurn" throws an error when called with player who's not in the game
+     */
     @Test
     public void testStartTurnWithIllegalPlayer(){
         assertThrows(IllegalArgumentException.class , () -> game.startTurn(new Player()));
     }
 
+
+    /**
+     * asserts that "startTurn" throws an error when called with player who's turn it isn't
+     */
     @Test
     public void testStartTurnWithPlayerWhosTurnItIsnt(){
         assertThrows(IllegalArgumentException.class , ()->game.startTurn(players.get(2)));
     }
 
+
+
+    /**
+     * asserts that nothing happens when the top card on the pile is a normal card
+     */
     @Test
     public void testStartTurnWithNormalCard(){
         Card topCard = new Card(Cardtype.five,Color.blue);
@@ -139,6 +176,10 @@ class GameTest {
         assertEquals(Direction.left, game.getDirection());
     }
 
+
+    /**
+     * asserts that the player gets skipped if the top card is a skip card, and the game moves on to the corresponding player and state
+     */
     @Test
     public void testStartingTurnWithSkipCard(){
         Card topCard = new Skip(Color.blue);
@@ -152,6 +193,9 @@ class GameTest {
         assertEquals(Direction.left, game.getDirection());
     }
 
+    /**
+     * asserts that nothing happens, if the top card is a reverse card
+     */
     @Test
     public void testStartingTurnWithReverseCard(){
         Card topCard = new Reverse(Color.blue);
@@ -161,9 +205,12 @@ class GameTest {
         assertEquals(7, currentPlayer.getCards().size());
         assertEquals(TurnState.afterEffect,game.getTurnState());
         assertEquals(topCard, game.getDiscardPile().get(game.getDiscardPile().size()-1));
-        assertEquals(Direction.right, game.getDirection());
+        assertEquals(Direction.left, game.getDirection());
     }
 
+    /**
+     * asserts that the player gets skipped if the top card is a draw two card, and the game moves on to the corresponding player and state and the current player draws 2 cards
+     */
     @Test
     public void testStartTurnWithDrawTwo(){
         Card topCard = new DrawTwo(Color.blue);
@@ -176,6 +223,9 @@ class GameTest {
         assertEquals(Direction.left, game.getDirection());
     }
 
+    /**
+     * asserts that nothing happens, if the top card is a wild card
+     */
     @Test
     public void testStartTurnWithWild(){
         Card topCard = new Wild();
@@ -189,6 +239,9 @@ class GameTest {
         assertEquals(Direction.left, game.getDirection());
     }
 
+    /**
+     * asserts that the player gets skipped if the top card is a wild draw four card, and the game moves on to the corresponding player and state and the player draws four cards
+     */
     @Test
     public void testStartTurnWithWildDrawFour() {
         Card topCard = new WildDrawFour();
@@ -206,6 +259,9 @@ class GameTest {
     //playable
     ///////////////
 
+    /**
+     * Assures that a normal card of the same color can be placed on top of another card of the same color
+     */
     @Test
     public void testPlayableNormalCaseColor(){
         game.setTurnState(TurnState.afterEffect);
@@ -213,6 +269,9 @@ class GameTest {
         assertEquals(true, game.playable(card,currentPlayer));
     }
 
+    /**
+     * Assures that a normal card of the same number can be placed on top of another card of the same number
+     */
     @Test
     public void testPlayableNormalCaseNumber(){
         game.setTurnState(TurnState.afterEffect);
@@ -220,6 +279,9 @@ class GameTest {
         assertEquals(true, game.playable(card,currentPlayer));
     }
 
+    /**
+     * Assures that a normal card ocan't be placed on top of another card of different number and color
+     */
     @Test
     public void testPlayableNormalCaseNeitherNumberNorColor(){
         game.setTurnState(TurnState.afterEffect);
@@ -227,6 +289,9 @@ class GameTest {
         assertEquals(false, game.playable(card,currentPlayer));
     }
 
+    /**
+     * Assures that a normal card can be placed on top of a wild card where the same color was chosen
+     */
     @Test
     public void testPlayableOnWildCard(){
         game.setTurnState(TurnState.afterEffect);
@@ -237,6 +302,9 @@ class GameTest {
         assertEquals(true, game.playable(card,currentPlayer));
     }
 
+    /**
+     * Assures that a normal card can't be placed on top of a wild card where another color was chosen
+     */
     @Test
     public void testPlayableOnWildCardWrongColor(){
         game.setTurnState(TurnState.afterEffect);
@@ -247,6 +315,9 @@ class GameTest {
         assertEquals(false, game.playable(card,currentPlayer));
     }
 
+    /**
+     * Assures that a normal card can be placed on top of a special card of the same color
+     */
     @Test
     public void testPlayableOnSpecialSameColor(){
         game.setTurnState(TurnState.afterEffect);
@@ -256,6 +327,9 @@ class GameTest {
         assertEquals(true, game.playable(card,currentPlayer));
     }
 
+    /**
+     * Assures that a special card can be placed on top of another special card of the same type
+     */
     @Test
     public void testPlayableOnSpecialSameSpecial(){
         game.setTurnState(TurnState.afterEffect);
@@ -265,6 +339,9 @@ class GameTest {
         assertEquals(true, game.playable(card,currentPlayer));
     }
 
+    /**
+     * Assures that a special card can't be placed on top of a different special card of another color
+     */
     @Test
     public void testPlayableOnSpecialNothingInCommon(){
         game.setTurnState(TurnState.afterEffect);
@@ -274,6 +351,9 @@ class GameTest {
         assertEquals(true, game.playable(card,currentPlayer));
     }
 
+    /**
+     * Assures that a wild card can always be played
+     */
     @Test
     public void testPlayableWild(){
         game.setTurnState(TurnState.afterEffect);
@@ -281,6 +361,9 @@ class GameTest {
         assertEquals(true, game.playable(card,currentPlayer));
     }
 
+    /**
+     * Assures that a player who isn't in the game can't play a card
+     */
     @Test
     public void testPlayableIlligalPlayer(){
         game.setTurnState(TurnState.afterEffect);
@@ -288,6 +371,9 @@ class GameTest {
         assertThrows(IllegalArgumentException.class, ()-> game.playable(card,new Player()));
     }
 
+    /**
+     * Assures that when a player who's turn it isn't get's the information that he can't play a card
+     */
     @Test
     public void testPlayableWrongPlayer(){
         game.setTurnState(TurnState.afterEffect);
@@ -299,13 +385,19 @@ class GameTest {
     //playCard
     ////////////////
 
+    /**
+     * Assures that a player who isn't in the game can't play a card
+     */
     @Test
     public void testPlayCardWrongPlayer(){
         game.setTurnState(TurnState.afterEffect);
         Card card = new Card(Cardtype.five,Color.blue);
-        assertThrows(IllegalArgumentException.class,()-> game.playCard(card,currentPlayer));
+        assertThrows(IllegalArgumentException.class,()-> game.playCard(card,players.get(1)));
     }
 
+    /**
+     * assures that a player who't turn it isn't can't play a card
+     */
     @Test
     public void testPlayCardIllegalPlayer(){
         game.setTurnState(TurnState.afterEffect);
@@ -313,6 +405,9 @@ class GameTest {
         assertThrows(IllegalArgumentException.class,()-> game.playCard(card,new Player()));
     }
 
+    /**
+     * Asserts that a card can only be played when the gamestate is correct
+     */
     @Test
     public void testPlayCardWrongGameState(){
         game.setTurnState(TurnState.played);
@@ -320,6 +415,9 @@ class GameTest {
         assertThrows(IllegalArgumentException.class,()-> game.playCard(card,currentPlayer));
     }
 
+    /**
+     * asserts that a card can be played, after the beginning effect happened
+     */
     @Test
     public void testPlayCardNormalCase(){
         game.setTurnState(TurnState.afterEffect);
@@ -331,6 +429,9 @@ class GameTest {
         assertEquals(Direction.left,game.getDirection());
     }
 
+    /**
+     * Asserts that a card can be played after a card has been drawn
+     */
     @Test
     public void testPlayCardAfterDrawing(){
         game.setTurnState(TurnState.drawn);
@@ -342,6 +443,9 @@ class GameTest {
         assertEquals(Direction.left,game.getDirection());
     }
 
+    /**
+     * Asserts that special cards can be played
+     */
     @Test
     public void testPlayCardSpecialCard(){
         game.setTurnState(TurnState.afterEffect);
@@ -353,6 +457,9 @@ class GameTest {
         assertEquals(Direction.left,game.getDirection());
     }
 
+    /**
+     * asserts that playing the reverse card reverses the order
+     */
     @Test
     public void testPlayCardReverse(){
         game.setTurnState(TurnState.afterEffect);
@@ -364,6 +471,9 @@ class GameTest {
         assertEquals(Direction.right,game.getDirection());
     }
 
+    /**
+     * asserts that an error gets thrown, if the player tires to play an illigal card
+     */
     @Test
     public void testPlayCardIllegalCard(){
         game.setTurnState(TurnState.afterEffect);
@@ -371,6 +481,9 @@ class GameTest {
         assertThrows(IllegalArgumentException.class,()-> game.playCard(card,currentPlayer));
     }
 
+    /**
+     * asserts that the player can choose a color, when he plays the draw 4 card
+     */
     @Test
     public void testPlayCardWildDrawFour()
     {
@@ -398,6 +511,9 @@ class GameTest {
     //SayUno
     ////////////////
 
+    /**
+     * Asserts that a player can say uno and it gets registered, after he played his second to last card
+     */
     @Test
     public void testSayUnoTrueCaseOwnTurn(){
         game.setTurnState(TurnState.played);
@@ -408,6 +524,9 @@ class GameTest {
         assertEquals(true, game.getCurrentPlayer().isSaidUno());
     }
 
+    /**
+     * Asserts that a player can say uno and it gets registered, aon his succesors turn, before he did anything
+     */
     @Test
     public void testSayUnoTrueCaseNextTurn(){
         game.setTurnState(TurnState.beginning);
@@ -419,12 +538,18 @@ class GameTest {
         assertEquals(true, game.getCurrentPlayer().isSaidUno());
     }
 
+    /**
+     * asserts that an error gets thrown, if a player sais uno, with too many cards in hand
+     */
     @Test
     public void testSayUnoIllegalCaseTwoManyCards(){
         game.setTurnState(TurnState.played);
         assertThrows( IllegalStateException.class ,()->game.sayUno(currentPlayer) );
     }
 
+    /**
+     * asserts that a player can't say uno, right before he played a card
+     */
     @Test
     public void testSayUnoIllegalBeforePlayedCards(){
         game.setTurnState(TurnState.beginning);
@@ -434,6 +559,9 @@ class GameTest {
         assertThrows( IllegalStateException.class ,()->game.sayUno(currentPlayer) );
     }
 
+    /**
+     * aserts that a player can't say uno, if the player after him already played a card
+     */
     @Test
     public void testSayUnoIllegalnextPlayerPlayedAllready(){
         game.setTurnState(TurnState.beginning);
@@ -452,6 +580,9 @@ class GameTest {
     //accuseUno
     //////////////////
 
+    /**
+     * Asserts that a player can say uno, if a player has one card in hand, the player afterwards has already played, and he hasn't said uno. Also checks that the player gets penalized.
+     */
     @Test
     public void testAccuseUnoCorrectAcusation(){
         game.setTurnState(TurnState.beginning);
@@ -468,6 +599,9 @@ class GameTest {
         assertEquals(3,currentPlayer.getCards().size());
     }
 
+    /**
+     * Asserts that a Accusation can also be made, right before the last card gets played, if all other conditions are met
+     */
     @Test
     public void testAccuseUnoCorrectAcusationLastMoment(){
         game.setTurnState(TurnState.beginning);
@@ -486,6 +620,9 @@ class GameTest {
         assertEquals(3,currentPlayer.getCards().size());
     }
 
+    /**
+     * Asserts that an error gets thrown, if a player tries to accuse, before the next player took his turn
+     */
     @Test
     public void testAccuseTooEarly(){
         game.setTurnState(TurnState.beginning);
@@ -500,6 +637,9 @@ class GameTest {
         assertThrows(IllegalStateException.class, ()->game.accuseUno(players.get(4), currentPlayer));
     }
 
+    /**
+     * asserts that an error gets thrown, if an accusation get made against a player with more than 1 card in hand
+     */
     @Test
     public void testAccuseUnoTooManyCards(){
         game.setTurnState(TurnState.beginning);
@@ -511,6 +651,9 @@ class GameTest {
         assertThrows(IllegalStateException.class, ()->game.accuseUno(players.get(4), currentPlayer));
     }
 
+    /**
+     * asserts that an error gets thrown, if a player tries to accuse a player who said uno
+     */
     @Test
     public void testAccuseUnoSaidUno(){
         game.setTurnState(TurnState.played);
@@ -532,6 +675,9 @@ class GameTest {
     //drawCard
     ////////////////
 
+    /**
+     * asserts that a player gets an additional card, when he draws a card under the rigght conditions
+     */
     @Test
     public void testdrawCardNoral(){
         game.setTurnState(TurnState.afterEffect);
@@ -540,18 +686,27 @@ class GameTest {
         assertEquals(TurnState.drawn,game.getTurnState());
     }
 
+    /**
+     * checks that an error gets thrown, if a player tries to draw again, after having drawn once
+     */
     @Test
     public void testdrawCardIllegalAfterDrawingAlready(){
         game.setTurnState(TurnState.drawn);
         assertThrows(IllegalStateException.class,()->game.drawCard(currentPlayer));
     }
 
+    /**
+     * checks that an error gets thrown, if another player tries to draw a card
+     */
     @Test
     public void testdrawCardIllegalPlayer(){
         game.setTurnState(TurnState.afterEffect);
         assertThrows(IllegalStateException.class,()->game.drawCard(new Player()));
     }
 
+    /**
+     * checks that an error gets thrown, if another player tries to draw a card
+     */
     @Test
     public void testdrawCardWrongPlayer(){
         game.setTurnState(TurnState.afterEffect);
@@ -562,6 +717,9 @@ class GameTest {
     //endTurn
     ///////////////
 
+    /**
+     * asserts that a player can end his turn and the next player becomes the current player, and that the state is changed acordingly
+     */
     @Test
     public void testEndTurnNormal(){
         game.setTurnState(TurnState.played);
@@ -569,6 +727,9 @@ class GameTest {
         assertNotEquals(currentPlayer,game.getCurrentPlayer());
     }
 
+    /**
+     * asserts (checks for thrown error) that a turn can only be ended, if a player has only drawn a card this turn
+     */
     @Test
     public void testEndTurnOnlyDrawn(){
         game.setTurnState(TurnState.drawn);
@@ -576,24 +737,36 @@ class GameTest {
         assertNotEquals(currentPlayer,game.getCurrentPlayer());
     }
 
+    /**
+     * Checks that an error gets thrown, if a player tires to end his turn before drawing or playing
+     */
     @Test
     public void testEndTurnAtWrongState(){
         game.setTurnState(TurnState.afterEffect);
         assertThrows(IllegalStateException.class,()->game.endTurn(currentPlayer));
     }
 
+    /**
+     * checks that an error gets thrown, if another player tries to end the turn
+     */
     @Test
     public void testEndTurnWrongPlayer(){
         game.setTurnState(TurnState.played);
         assertThrows(IllegalStateException.class,()->game.endTurn(players.get(2)));
     }
 
+    /**
+     * checks that an error gets thrown, if a player from outisde the game tries to end the turn
+     */
     @Test
     public void testEndTurnIllegalPlayer(){
         game.setTurnState(TurnState.played);
         assertThrows(IllegalStateException.class,()->game.endTurn(new Player()));
     }
 
+    /**
+     * asserts that the game ends, when a player ends his turn with zero cards
+     */
     @Test
     public void testEndTurnAndWon(){
         game.setTurnState(TurnState.played);
