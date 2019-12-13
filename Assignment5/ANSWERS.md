@@ -1,6 +1,19 @@
 # Assignment 5
 
 ## Part 1
+Note: For this test we are using the code from our gitHub which was modified at some point so that all the classes are called "<name>_ex1". The modification also changed some variable names, but as these are consistent within the sections they are used in, this simply results in some peculiar variable names, so we decided not to comb through the entire code to change them back...
+Before even starting to write the test suite we decided to fix up the User input, as we had been made aware of the fact that entering incorrect data caused our system to end in an error.
+So we changed any instance of "scanner.nextInt()" to "scanner.nextLine()" and instead used a "matches("\\d+")" to make sure we were recieving a positive integer, asking for another input if this was not the case.
+In addition to that we also used ".isEmpty" for checking the entered player name so one could not simply press the enter key and give the player an empty string as a name.
+In addition to that we also decided to remove any methods that had been implemented but never used, as there is no reason to keep them in there.
+One thing we did not know how to test properly were print statements, but if all else was stored correctly those should not prove to be a problem…
+Due to us using quite a few ‘get’ and ‘set’ methods which do nothing else but store and retrieve a specific variable, we decided only to make a single test for one of these (while testing the player). If anything special was being done with the variable, when storing it, we did try to test that. We also didn’t make a separate Test for Ladder_ex1’s putOn() method, as that is basically the same as Snake_ex1’s, moving it to a specific ‘destination’ rather than its own storage.
+We did not test the Die_ex1 class, as the only thing that does is make a random number and we’re not doing to test java’s inbuilt functions…
+Bug Fixes/changes in testing:
+•	We changed how player names were accepted. Instead of having the Player_ex1 class ask for the name we handled that in Game_ex1 (in initialValues()). This was so we could first store the names in an arraylist and verify that there were no duplicates. Due to this player now requires a string in its constructor, instead of a number, which was previously only used to ask the player for their name.
+•	Due to us being unable to test several aspects of the code (as they were private) we made some of those protected, so we could test them properly. We also made the “addPlayer()” method in the Field_ex1 class so that it couldn’t be easily messed with, but still inherited.
+•	setAllLadders() in Board_ex1 contained an error that caused stack overflows, thanks to finding that in bug testing and then doing a slight modification that should no longer be a problem
+
 
 ## Part 2
 
